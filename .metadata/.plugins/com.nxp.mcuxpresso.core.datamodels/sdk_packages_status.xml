@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdk-packages>
+<package hash="1686411040884" path="C:\Users\sergi\mcuxpresso\02\SDKPackages\SDK_2_11_0_MK66FN2M0xxx18.zip" schema="manifest-schema/sdk_manifest_v3.13.xsd"/>
+<package hash="1696987471113" path="C:\Users\sergi\mcuxpresso\02\SDKPackages\SDK_2_2_3_FRDM-KW41Z.zip" schema="manifest-schema/sdk_manifest_v3.3.xsd"/>
+<package hash="1690391280000" path="C:\nxp\MCUXpressoIDE_11.8.0_1165\ide\plugins\com.nxp.mcuxpresso.core.datamodels.resources_11.8.0.202306131047\override" schema="manifest-schema/sdk_manifest_v3.3.xsd"/>
+<package hash="1693962170475" path="C:\Users\sergi\mcuxpresso\02\SDKPackages\SDK_2_11_0_FRDM-K64F.zip" schema="manifest-schema/sdk_manifest_v3.13.xsd"/>
+<package hash="1690391280000" path="C:\nxp\MCUXpressoIDE_11.8.0_1165\ide\plugins\com.nxp.mcuxpresso.core.datamodels.resources_11.8.0.202306131047\fragments" schema="manifest-schema/sdk_manifest_v3.3.xsd"/>
+<package hash="1674224673461" path="C:\Users\sergi\mcuxpresso\02\SDKPackages\SDK_2_11_0_FRDM-K66F.zip" schema="manifest-schema/sdk_manifest_v3.13.xsd"/>
+</sdk-packages>
