@@ -1,2 +1,6 @@
 1700010877049	Delete resource 'frdmkw41z_Leader_Router1'
 1700010883399	Delete resource 'frdmkw41z_Router2'
+1700182114423	Delete resource 'frdmkw41z_Leader_Router1'
+1700182121620	Delete resource 'frdmkw41z_Router2'
+1700182344190	Rename resource 'frdmkw41z_Leader_Router1_wireless_examples_thread_router_eligible_device_freertos'
+1700182607454	Rename resource 'frdmkw41z_Router2_wireless_examples_thread_router_eligible_device_freertos'
