@@ -87,7 +87,12 @@ source/router_eligible_device_app.o source/router_eligible_device_app.d: \
  C:\EmbebidosIII\Practica2\frdmkw41z_Router2\nwk_ip\core\interface\modules/session.h \
  C:\EmbebidosIII\Practica2\frdmkw41z_Router2\nwk_ip\app\common/app_event_monitoring.h \
  C:\EmbebidosIII\Practica2\frdmkw41z_Router2\nwk_ip\core\interface\thread/thread_mgmt.h \
- C:\EmbebidosIII\Practica2\frdmkw41z_Router2\nwk_ip\base\interface/thci.h
+ C:\EmbebidosIII\Practica2\frdmkw41z_Router2\nwk_ip\base\interface/thci.h \
+ C:\EmbebidosIII\Practica2\frdmkw41z_Router2\drivers/fsl_i2c.h \
+ C:\EmbebidosIII\Practica2\frdmkw41z_Router2\board/pin_mux.h \
+ C:\EmbebidosIII\Practica2\frdmkw41z_Router2\drivers/fsl_port.h \
+ C:\EmbebidosIII\Practica2\frdmkw41z_Router2\board/clock_config.h \
+ C:\EmbebidosIII\Practica2\frdmkw41z_Router2\drivers/fsl_common.h
 C:/EmbebidosIII/Practica2/frdmkw41z_Router2/source/config.h:
 C:\EmbebidosIII\Practica2\frdmkw41z_Router2\nwk_ip\app\config/app_config.h:
 C:\EmbebidosIII\Practica2\frdmkw41z_Router2\nwk_ip\app\config/app_stack_config.h:
@@ -176,3 +181,8 @@ C:\EmbebidosIII\Practica2\frdmkw41z_Router2\nwk_ip\core\interface\modules/sessio
 C:\EmbebidosIII\Practica2\frdmkw41z_Router2\nwk_ip\app\common/app_event_monitoring.h:
 C:\EmbebidosIII\Practica2\frdmkw41z_Router2\nwk_ip\core\interface\thread/thread_mgmt.h:
 C:\EmbebidosIII\Practica2\frdmkw41z_Router2\nwk_ip\base\interface/thci.h:
+C:\EmbebidosIII\Practica2\frdmkw41z_Router2\drivers/fsl_i2c.h:
+C:\EmbebidosIII\Practica2\frdmkw41z_Router2\board/pin_mux.h:
+C:\EmbebidosIII\Practica2\frdmkw41z_Router2\drivers/fsl_port.h:
+C:\EmbebidosIII\Practica2\frdmkw41z_Router2\board/clock_config.h:
+C:\EmbebidosIII\Practica2\frdmkw41z_Router2\drivers/fsl_common.h:

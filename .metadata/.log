@@ -3251,3 +3251,6 @@ java.lang.NullPointerException: Cannot read the array length because "containers
 !MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.ImmediateRequestMonitor@4be1f39e): Status ERROR: org.eclipse.cdt.dsf.gdb code=10004 Suspend operation timeout.' resulted in an error.
 !SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2023-11-22 15:21:22.211
 !MESSAGE Suspend operation timeout.
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-11-22 21:26:54.741
+!MESSAGE Indexed 'frdmkw41z_driver_examples_i2c_read_accel_value_transfer_accel' (17 sources, 39 headers) in 2.8 sec: 6,445 declarations; 14,555 references; 0 unresolved inclusions; 75 syntax errors; 0 unresolved names (0 %)

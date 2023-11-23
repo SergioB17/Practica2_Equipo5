@@ -1,40 +1,40 @@
-13:33:33 **** Incremental Build of configuration Debug for project frdmkw41z_Router2 ****
+22:07:56 **** Incremental Build of configuration Debug for project frdmkw41z_Router2 ****
 make -r -j8 all 
 Building file: ../source/router_eligible_device_app.c
 Invoking: MCU C Compiler
 arm-none-eabi-gcc -std=gnu99 -D__REDLIB__ -DCPU_MKW41Z512VHT4_cm0plus -DCPU_MKW41Z512VHT4 -D__SEMIHOST_HARDFAULT_DISABLE=1 -DFSL_RTOS_FREE_RTOS -DFRDM_KW41Z -DFREEDOM -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"C:\EmbebidosIII\Practica2\frdmkw41z_Router2\source" -I"C:\EmbebidosIII\Practica2\frdmkw41z_Router2" -I"C:\EmbebidosIII\Practica2\frdmkw41z_Router2\CMSIS" -I"C:\EmbebidosIII\Practica2\frdmkw41z_Router2\framework\OSAbstraction\Interface" -I"C:\EmbebidosIII\Practica2\frdmkw41z_Router2\freertos" -I"C:\EmbebidosIII\Practica2\frdmkw41z_Router2\ieee_802.15.4\mac\source\App" -I"C:\EmbebidosIII\Practica2\frdmkw41z_Router2\ieee_802.15.4\mac\interface" -I"C:\EmbebidosIII\Practica2\frdmkw41z_Router2\ieee_802.15.4\phy\interface" -I"C:\EmbebidosIII\Practica2\frdmkw41z_Router2\framework\GPIO" -I"C:\EmbebidosIII\Practica2\frdmkw41z_Router2\framework\Keyboard\Interface" -I"C:\EmbebidosIII\Practica2\frdmkw41z_Router2\framework\LED\Interface" -I"C:\EmbebidosIII\Practica2\frdmkw41z_Router2\framework\SerialManager\Source\SPI_Adapter" -I"C:\EmbebidosIII\Practica2\frdmkw41z_Router2\framework\SerialManager\Source\UART_Adapter" -I"C:\EmbebidosIII\Practica2\frdmkw41z_Router2\framework\SerialManager\Source\I2C_Adapter" -I"C:\EmbebidosIII\Practica2\frdmkw41z_Router2\framework\Flash\Internal" -I"C:\EmbebidosIII\Practica2\frdmkw41z_Router2\framework\common" -I"C:\EmbebidosIII\Practica2\frdmkw41z_Router2\framework\MemManager\Interface" -I"C:\EmbebidosIII\Practica2\frdmkw41z_Router2\framework\Messaging\Interface" -I"C:\EmbebidosIII\Practica2\frdmkw41z_Router2\framework\Panic\Interface" -I"C:\EmbebidosIII\Practica2\frdmkw41z_Router2\framework\RNG\Interface" -I"C:\EmbebidosIII\Practica2\frdmkw41z_Router2\framework\SerialManager\Interface" -I"C:\EmbebidosIII\Practica2\frdmkw41z_Router2\framework\TimersManager\Interface" -I"C:\EmbebidosIII\Practica2\frdmkw41z_Router2\framework\TimersManager\Source" -I"C:\EmbebidosIII\Practica2\frdmkw41z_Router2\framework\SecLib" -I"C:\EmbebidosIII\Practica2\frdmkw41z_Router2\framework\Lists" -I"C:\EmbebidosIII\Practica2\frdmkw41z_Router2\framework\FunctionLib" -I"C:\EmbebidosIII\Practica2\frdmkw41z_Router2\framework\ModuleInfo" -I"C:\EmbebidosIII\Practica2\frdmkw41z_Router2\framework\MWSCoexistence\Interface" -I"C:\EmbebidosIII\Practica2\frdmkw41z_Router2\framework\Shell\Interface" -I"C:\EmbebidosIII\Practica2\frdmkw41z_Router2\framework\NVM\Interface" -I"C:\EmbebidosIII\Practica2\frdmkw41z_Router2\framework\NVM\Source" -I"C:\EmbebidosIII\Practica2\frdmkw41z_Router2\framework\FSCI\Interface" -I"C:\EmbebidosIII\Practica2\frdmkw41z_Router2\framework\FSCI\Source" -I"C:\EmbebidosIII\Practica2\frdmkw41z_Router2\framework\LowPower\Interface\MKW41Z" -I"C:\EmbebidosIII\Practica2\frdmkw41z_Router2\framework\LowPower\Source\MKW41Z" -I"C:\EmbebidosIII\Practica2\frdmkw41z_Router2\nwk_ip\core\interface" -I"C:\EmbebidosIII\Practica2\frdmkw41z_Router2\nwk_ip\core\interface\modules" -I"C:\EmbebidosIII\Practica2\frdmkw41z_Router2\nwk_ip\core\interface\thread" -I"C:\EmbebidosIII\Practica2\frdmkw41z_Router2\nwk_ip\base\interface" -I"C:\EmbebidosIII\Practica2\frdmkw41z_Router2\nwk_ip\core\interface\http" -I"C:\EmbebidosIII\Practica2\frdmkw41z_Router2\nwk_ip\app\config" -I"C:\EmbebidosIII\Practica2\frdmkw41z_Router2\nwk_ip\app\common" -I"C:\EmbebidosIII\Practica2\frdmkw41z_Router2\drivers" -I"C:\EmbebidosIII\Practica2\frdmkw41z_Router2\framework\DCDC\Interface" -I"C:\EmbebidosIII\Practica2\frdmkw41z_Router2\framework\XCVR\MKW41Z4" -I"C:\EmbebidosIII\Practica2\frdmkw41z_Router2\ieee_802.15.4\phy\source\MKW41Z" -I"C:\EmbebidosIII\Practica2\frdmkw41z_Router2\utilities" -I"C:\EmbebidosIII\Practica2\frdmkw41z_Router2\board" -Og -fno-common -g -Wall -Wno-missing-braces  -c  -ffunction-sections  -fdata-sections  -ffreestanding  -fno-builtin -imacros "C:/EmbebidosIII/Practica2/frdmkw41z_Router2/source/config.h" -fmacro-prefix-map="../source/"= -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/router_eligible_device_app.d" -MT"source/router_eligible_device_app.o" -MT"source/router_eligible_device_app.d" -o "source/router_eligible_device_app.o" "../source/router_eligible_device_app.c"
-../source/router_eligible_device_app.c:85:49: warning: pointer targets in initialization of 'uint8_t *' {aka 'unsigned char *'} from 'char *' differ in signedness [-Wpointer-sign]
-   85 | #define APP_RESOURCE1_URI_PATH                  "/team5"
+../source/router_eligible_device_app.c:89:49: warning: pointer targets in initialization of 'uint8_t *' {aka 'unsigned char *'} from 'char *' differ in signedness [-Wpointer-sign]
+   89 | #define APP_RESOURCE1_URI_PATH                  "/team5"
       |                                                 ^~~~~~~~
-../source/router_eligible_device_app.c:152:86: note: in expansion of macro 'APP_RESOURCE1_URI_PATH'
-  152 | const coapUriPath_t gAPP_RESOURCE1_URI_PATH = {SizeOfString(APP_RESOURCE1_URI_PATH), APP_RESOURCE1_URI_PATH};
+../source/router_eligible_device_app.c:172:86: note: in expansion of macro 'APP_RESOURCE1_URI_PATH'
+  172 | const coapUriPath_t gAPP_RESOURCE1_URI_PATH = {SizeOfString(APP_RESOURCE1_URI_PATH), APP_RESOURCE1_URI_PATH};
       |                                                                                      ^~~~~~~~~~~~~~~~~~~~~~
-../source/router_eligible_device_app.c:85:49: note: (near initialization for 'gAPP_RESOURCE1_URI_PATH.pUriPath')
-   85 | #define APP_RESOURCE1_URI_PATH                  "/team5"
+../source/router_eligible_device_app.c:89:49: note: (near initialization for 'gAPP_RESOURCE1_URI_PATH.pUriPath')
+   89 | #define APP_RESOURCE1_URI_PATH                  "/team5"
       |                                                 ^~~~~~~~
-../source/router_eligible_device_app.c:152:86: note: in expansion of macro 'APP_RESOURCE1_URI_PATH'
-  152 | const coapUriPath_t gAPP_RESOURCE1_URI_PATH = {SizeOfString(APP_RESOURCE1_URI_PATH), APP_RESOURCE1_URI_PATH};
+../source/router_eligible_device_app.c:172:86: note: in expansion of macro 'APP_RESOURCE1_URI_PATH'
+  172 | const coapUriPath_t gAPP_RESOURCE1_URI_PATH = {SizeOfString(APP_RESOURCE1_URI_PATH), APP_RESOURCE1_URI_PATH};
       |                                                                                      ^~~~~~~~~~~~~~~~~~~~~~
-../source/router_eligible_device_app.c:86:49: warning: pointer targets in initialization of 'uint8_t *' {aka 'unsigned char *'} from 'char *' differ in signedness [-Wpointer-sign]
-   86 | #define APP_RESOURCE2_URI_PATH                  "/resource2"
+../source/router_eligible_device_app.c:90:49: warning: pointer targets in initialization of 'uint8_t *' {aka 'unsigned char *'} from 'char *' differ in signedness [-Wpointer-sign]
+   90 | #define APP_RESOURCE2_URI_PATH                  "/resource2"
       |                                                 ^~~~~~~~~~~~
-../source/router_eligible_device_app.c:154:86: note: in expansion of macro 'APP_RESOURCE2_URI_PATH'
-  154 | const coapUriPath_t gAPP_RESOURCE2_URI_PATH = {SizeOfString(APP_RESOURCE2_URI_PATH), APP_RESOURCE2_URI_PATH};
+../source/router_eligible_device_app.c:174:86: note: in expansion of macro 'APP_RESOURCE2_URI_PATH'
+  174 | const coapUriPath_t gAPP_RESOURCE2_URI_PATH = {SizeOfString(APP_RESOURCE2_URI_PATH), APP_RESOURCE2_URI_PATH};
       |                                                                                      ^~~~~~~~~~~~~~~~~~~~~~
-../source/router_eligible_device_app.c:86:49: note: (near initialization for 'gAPP_RESOURCE2_URI_PATH.pUriPath')
-   86 | #define APP_RESOURCE2_URI_PATH                  "/resource2"
+../source/router_eligible_device_app.c:90:49: note: (near initialization for 'gAPP_RESOURCE2_URI_PATH.pUriPath')
+   90 | #define APP_RESOURCE2_URI_PATH                  "/resource2"
       |                                                 ^~~~~~~~~~~~
-../source/router_eligible_device_app.c:154:86: note: in expansion of macro 'APP_RESOURCE2_URI_PATH'
-  154 | const coapUriPath_t gAPP_RESOURCE2_URI_PATH = {SizeOfString(APP_RESOURCE2_URI_PATH), APP_RESOURCE2_URI_PATH};
+../source/router_eligible_device_app.c:174:86: note: in expansion of macro 'APP_RESOURCE2_URI_PATH'
+  174 | const coapUriPath_t gAPP_RESOURCE2_URI_PATH = {SizeOfString(APP_RESOURCE2_URI_PATH), APP_RESOURCE2_URI_PATH};
       |                                                                                      ^~~~~~~~~~~~~~~~~~~~~~
 ../source/router_eligible_device_app.c: In function 'APP_CoapResource1Cb':
-../source/router_eligible_device_app.c:86:49: warning: pointer targets in passing argument 3 of 'COAP_AddOptionToList' differ in signedness [-Wpointer-sign]
-   86 | #define APP_RESOURCE2_URI_PATH                  "/resource2"
+../source/router_eligible_device_app.c:90:49: warning: pointer targets in passing argument 3 of 'COAP_AddOptionToList' differ in signedness [-Wpointer-sign]
+   90 | #define APP_RESOURCE2_URI_PATH                  "/resource2"
       |                                                 ^~~~~~~~~~~~
       |                                                 |
       |                                                 char *
-../source/router_eligible_device_app.c:218:57: note: in expansion of macro 'APP_RESOURCE2_URI_PATH'
-  218 |   COAP_AddOptionToList(pMySession,COAP_URI_PATH_OPTION, APP_RESOURCE2_URI_PATH,SizeOfString(APP_RESOURCE2_URI_PATH));
+../source/router_eligible_device_app.c:241:57: note: in expansion of macro 'APP_RESOURCE2_URI_PATH'
+  241 |   COAP_AddOptionToList(pMySession,COAP_URI_PATH_OPTION, APP_RESOURCE2_URI_PATH,SizeOfString(APP_RESOURCE2_URI_PATH));
       |                                                         ^~~~~~~~~~~~~~~~~~~~~~
 In file included from C:\EmbebidosIII\Practica2\frdmkw41z_Router2\nwk_ip\core\interface\thread/thread_meshcop_mgmt.h:28,
                  from C:\EmbebidosIII\Practica2\frdmkw41z_Router2\nwk_ip\core\interface\thread/thread_app_callbacks.h:30,
@@ -43,26 +43,33 @@ C:\EmbebidosIII\Practica2\frdmkw41z_Router2\nwk_ip\core\interface\modules/coap.h
   443 | nwkStatus_t COAP_AddOptionToList(coapSession_t* pSession, uint8_t optName, uint8_t* optValue,uint8_t optValueLen);
       |                                                                            ~~~~~~~~~^~~~~~~~
 ../source/router_eligible_device_app.c: In function 'APP_InitCoapDemo':
-../source/router_eligible_device_app.c:605:75: warning: initialization of 'void (*)(coapSessionStatus_t,  uint8_t *, coapSession_t *, uint32_t)' {aka 'void (*)(coapSessionStatus_t,  unsigned char *, struct coapSession_tag *, unsigned int)'} from incompatible pointer type 'void (*)(coapSessionStatus_t,  void *, coapSession_t *, uint32_t)' {aka 'void (*)(coapSessionStatus_t,  void *, struct coapSession_tag *, unsigned int)'} [-Wincompatible-pointer-types]
-  605 |                                                                          {APP_CoapResource1Cb, (coapUriPath_t*)&gAPP_RESOURCE1_URI_PATH},
+../source/router_eligible_device_app.c:692:75: warning: initialization of 'void (*)(coapSessionStatus_t,  uint8_t *, coapSession_t *, uint32_t)' {aka 'void (*)(coapSessionStatus_t,  unsigned char *, struct coapSession_tag *, unsigned int)'} from incompatible pointer type 'void (*)(coapSessionStatus_t,  void *, coapSession_t *, uint32_t)' {aka 'void (*)(coapSessionStatus_t,  void *, struct coapSession_tag *, unsigned int)'} [-Wincompatible-pointer-types]
+  692 |                                                                          {APP_CoapResource1Cb, (coapUriPath_t*)&gAPP_RESOURCE1_URI_PATH},
       |                                                                           ^~~~~~~~~~~~~~~~~~~
-../source/router_eligible_device_app.c:605:75: note: (near initialization for 'cbParams[2].pCallback')
-../source/router_eligible_device_app.c:606:75: warning: initialization of 'void (*)(coapSessionStatus_t,  uint8_t *, coapSession_t *, uint32_t)' {aka 'void (*)(coapSessionStatus_t,  unsigned char *, struct coapSession_tag *, unsigned int)'} from incompatible pointer type 'void (*)(coapSessionStatus_t,  void *, coapSession_t *, uint32_t)' {aka 'void (*)(coapSessionStatus_t,  void *, struct coapSession_tag *, unsigned int)'} [-Wincompatible-pointer-types]
-  606 |                                                                          {APP_CoapResource2Cb, (coapUriPath_t*)&gAPP_RESOURCE2_URI_PATH},
+../source/router_eligible_device_app.c:692:75: note: (near initialization for 'cbParams[2].pCallback')
+../source/router_eligible_device_app.c:693:75: warning: initialization of 'void (*)(coapSessionStatus_t,  uint8_t *, coapSession_t *, uint32_t)' {aka 'void (*)(coapSessionStatus_t,  unsigned char *, struct coapSession_tag *, unsigned int)'} from incompatible pointer type 'void (*)(coapSessionStatus_t,  void *, coapSession_t *, uint32_t)' {aka 'void (*)(coapSessionStatus_t,  void *, struct coapSession_tag *, unsigned int)'} [-Wincompatible-pointer-types]
+  693 |                                                                          {APP_CoapResource2Cb, (coapUriPath_t*)&gAPP_RESOURCE2_URI_PATH},
       |                                                                           ^~~~~~~~~~~~~~~~~~~
-../source/router_eligible_device_app.c:606:75: note: (near initialization for 'cbParams[3].pCallback')
+../source/router_eligible_device_app.c:693:75: note: (near initialization for 'cbParams[3].pCallback')
 ../source/router_eligible_device_app.c: In function 'APP_GetCounter':
-../source/router_eligible_device_app.c:85:49: warning: pointer targets in passing argument 3 of 'COAP_AddOptionToList' differ in signedness [-Wpointer-sign]
-   85 | #define APP_RESOURCE1_URI_PATH                  "/team5"
+../source/router_eligible_device_app.c:89:49: warning: pointer targets in passing argument 3 of 'COAP_AddOptionToList' differ in signedness [-Wpointer-sign]
+   89 | #define APP_RESOURCE1_URI_PATH                  "/team5"
       |                                                 ^~~~~~~~
       |                                                 |
       |                                                 char *
-../source/router_eligible_device_app.c:627:63: note: in expansion of macro 'APP_RESOURCE1_URI_PATH'
-  627 |         COAP_AddOptionToList(pMySession,COAP_URI_PATH_OPTION, APP_RESOURCE1_URI_PATH,SizeOfString(APP_RESOURCE1_URI_PATH));
+../source/router_eligible_device_app.c:714:63: note: in expansion of macro 'APP_RESOURCE1_URI_PATH'
+  714 |         COAP_AddOptionToList(pMySession,COAP_URI_PATH_OPTION, APP_RESOURCE1_URI_PATH,SizeOfString(APP_RESOURCE1_URI_PATH));
       |                                                               ^~~~~~~~~~~~~~~~~~~~~~
 C:\EmbebidosIII\Practica2\frdmkw41z_Router2\nwk_ip\core\interface\modules/coap.h:443:85: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
   443 | nwkStatus_t COAP_AddOptionToList(coapSession_t* pSession, uint8_t optName, uint8_t* optValue,uint8_t optValueLen);
       |                                                                            ~~~~~~~~~^~~~~~~~
+../source/router_eligible_device_app.c: At top level:
+../source/router_eligible_device_app.c:148:13: warning: 'APP_CoapAccelR1Cb' declared 'static' but never defined [-Wunused-function]
+  148 | static void APP_CoapAccelR1Cb(coapSessionStatus_t sessionStatus, void *pData, coapSession_t *pSession, uint32_t dataLen);
+      |             ^~~~~~~~~~~~~~~~~
+../source/router_eligible_device_app.c:149:13: warning: 'APP_CoapAccelR2Cb' declared 'static' but never defined [-Wunused-function]
+  149 | static void APP_CoapAccelR2Cb(coapSessionStatus_t sessionStatus, void *pData, coapSession_t *pSession, uint32_t dataLen);
+      |             ^~~~~~~~~~~~~~~~~
 Finished building: ../source/router_eligible_device_app.c
  
 Building target: frdmkw41z_Router2.axf
@@ -88,7 +95,7 @@ c:/nxp/mcuxpressoide_11.8.0_1165/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.8
 Memory region         Used Size  Region Size  %age Used
     TEXT_region1:         192 B         1 KB     18.75%
 m_flash_config_region:          16 B         16 B    100.00%
-    TEXT_region2:      357867 B     455662 B     78.54%
+    TEXT_region2:      357887 B     455662 B     78.54%
       NVM_region:       65535 B      65535 B    100.00%
     DATA1_region:          0 GB        32 KB      0.00%
     DATA2_region:       61584 B        96 KB     62.65%
@@ -98,8 +105,8 @@ Finished building target: frdmkw41z_Router2.axf
 Performing post-build steps
 arm-none-eabi-size "frdmkw41z_Router2.axf"; # arm-none-eabi-objcopy -v -O binary "frdmkw41z_Router2.axf" "frdmkw41z_Router2.bin" ; # checksum -p MKW41Z512xxx4 -d "frdmkw41z_Router2.bin";
    text	   data	    bss	    dec	    hex	filename
- 358048	  68559	  58568	 485175	  76737	frdmkw41z_Router2.axf
+ 358068	  68559	  58568	 485195	  7674b	frdmkw41z_Router2.axf
  
 
-13:33:35 Build Finished. 0 errors, 15 warnings. (took 1s.834ms)
+22:07:59 Build Finished. 0 errors, 17 warnings. (took 3s.314ms)
 

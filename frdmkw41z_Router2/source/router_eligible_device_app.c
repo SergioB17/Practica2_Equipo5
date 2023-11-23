@@ -54,7 +54,11 @@ Include Files
 #include "app_echo_udp.h"
 #endif
 
-//#include "TimersManager.h"
+#include "fsl_i2c.h"
+#include "pin_mux.h"
+#include "fsl_gpio.h"
+#include "fsl_port.h"
+#include "clock_config.h"
 
 /*==================================================================================================
 Private macros
@@ -84,6 +88,18 @@ Private macros
 
 #define APP_RESOURCE1_URI_PATH                  "/team5"
 #define APP_RESOURCE2_URI_PATH                  "/resource2"
+#define APP_ACCELR1_URI_PATH                 	"/accel"
+#define APP_ACCELR2_URI_PATH    				"/accelr2"
+#define ACCEL_I2C_CLK_SRC I2C1_CLK_SRC
+#define ACCEL_I2C_CLK_FREQ CLOCK_GetFreq(I2C1_CLK_SRC)
+#define I2C_RELEASE_SDA_PORT PORTC
+#define I2C_RELEASE_SCL_PORT PORTC
+#define I2C_RELEASE_SDA_GPIO GPIOC
+#define I2C_RELEASE_SDA_PIN 3U
+#define I2C_RELEASE_SCL_GPIO GPIOC
+#define I2C_RELEASE_SCL_PIN 2U
+#define I2C_RELEASE_BUS_COUNT 100U
+#define I2C_BAUDRATE 100000U
 
 #if LARGE_NETWORK
 #define APP_RESET_TO_FACTORY_URI_PATH           "/reset"
@@ -128,9 +144,13 @@ static void APP_CoapTempCb(coapSessionStatus_t sessionStatus, uint8_t *pData, co
 static void APP_CoapSinkCb(coapSessionStatus_t sessionStatus, uint8_t *pData, coapSession_t *pSession, uint32_t dataLen);
 static void App_RestoreLeaderLed(uint8_t *param);
 
+static void init_accel(void);
+static void APP_CoapAccelR1Cb(coapSessionStatus_t sessionStatus, void *pData, coapSession_t *pSession, uint32_t dataLen);
+static void APP_CoapAccelR2Cb(coapSessionStatus_t sessionStatus, void *pData, coapSession_t *pSession, uint32_t dataLen);
 static void APP_CoapResource1Cb(coapSessionStatus_t sessionStatus, void *pData, coapSession_t *pSession, uint32_t dataLen);
 static void APP_CoapResource2Cb(coapSessionStatus_t sessionStatus, void *pData, coapSession_t *pSession, uint32_t dataLen);
 static void APP_GetCounter(void);
+void BOARD_I2C_ReleaseBus(void);
 
 
 #if LARGE_NETWORK
@@ -152,6 +172,10 @@ const coapUriPath_t gAPP_SINK_URI_PATH = {SizeOfString(APP_SINK_URI_PATH), (uint
 const coapUriPath_t gAPP_RESOURCE1_URI_PATH = {SizeOfString(APP_RESOURCE1_URI_PATH), APP_RESOURCE1_URI_PATH};
 
 const coapUriPath_t gAPP_RESOURCE2_URI_PATH = {SizeOfString(APP_RESOURCE2_URI_PATH), APP_RESOURCE2_URI_PATH};
+
+const coapUriPath_t gAPP_ACCELR1_URI_PATH = {SizeOfString(APP_ACCELR1_URI_PATH), (uint8_t *)APP_ACCELR1_URI_PATH};
+const coapUriPath_t gAPP_ACCELR2_URI_PATH = {SizeOfString(APP_ACCELR2_URI_PATH), (uint8_t *)APP_ACCELR2_URI_PATH};
+const uint8_t g_accel_address[] = {0x1CU, 0x1DU, 0x1EU, 0x1FU};
 
 #if LARGE_NETWORK
 const coapUriPath_t gAPP_RESET_URI_PATH = {SizeOfString(APP_RESET_TO_FACTORY_URI_PATH), (uint8_t *)APP_RESET_TO_FACTORY_URI_PATH};
@@ -198,7 +222,6 @@ uint8_t g_Counter_Timer = 0;
 
 static void PlusCounterRouter2(void *param)
 {
-	//shell_write("Holaqlero\n");
 	APP_GetCounter();
 }
 
@@ -285,6 +308,65 @@ uint32_t dataLen
 
 }
 
+static void i2c_release_bus_delay(void)
+{
+    uint32_t i = 0;
+    for (i = 0; i < I2C_RELEASE_BUS_COUNT; i++)
+    {
+        __NOP();
+    }
+}
+
+void BOARD_I2C_ReleaseBus(void)
+{
+    uint8_t i = 0;
+    gpio_pin_config_t pin_config;
+    port_pin_config_t i2c_pin_config = {0};
+
+    /* Config pin mux as gpio */
+    i2c_pin_config.pullSelect = kPORT_PullUp;
+    i2c_pin_config.mux = kPORT_MuxAsGpio;
+
+    pin_config.pinDirection = kGPIO_DigitalOutput;
+    pin_config.outputLogic = 1U;
+    CLOCK_EnableClock(kCLOCK_PortC);
+    PORT_SetPinConfig(I2C_RELEASE_SCL_PORT, I2C_RELEASE_SCL_PIN, &i2c_pin_config);
+    PORT_SetPinConfig(I2C_RELEASE_SCL_PORT, I2C_RELEASE_SDA_PIN, &i2c_pin_config);
+
+    GPIO_PinInit(I2C_RELEASE_SCL_GPIO, I2C_RELEASE_SCL_PIN, &pin_config);
+    GPIO_PinInit(I2C_RELEASE_SDA_GPIO, I2C_RELEASE_SDA_PIN, &pin_config);
+
+    /* Drive SDA low first to simulate a start */
+    GPIO_WritePinOutput(I2C_RELEASE_SDA_GPIO, I2C_RELEASE_SDA_PIN, 0U);
+    i2c_release_bus_delay();
+
+    /* Send 9 pulses on SCL and keep SDA low */
+    for (i = 0; i < 9; i++)
+    {
+        GPIO_WritePinOutput(I2C_RELEASE_SCL_GPIO, I2C_RELEASE_SCL_PIN, 0U);
+        i2c_release_bus_delay();
+
+        GPIO_WritePinOutput(I2C_RELEASE_SDA_GPIO, I2C_RELEASE_SDA_PIN, 1U);
+        i2c_release_bus_delay();
+
+        GPIO_WritePinOutput(I2C_RELEASE_SCL_GPIO, I2C_RELEASE_SCL_PIN, 1U);
+        i2c_release_bus_delay();
+        i2c_release_bus_delay();
+    }
+
+    /* Send stop */
+    GPIO_WritePinOutput(I2C_RELEASE_SCL_GPIO, I2C_RELEASE_SCL_PIN, 0U);
+    i2c_release_bus_delay();
+
+    GPIO_WritePinOutput(I2C_RELEASE_SDA_GPIO, I2C_RELEASE_SDA_PIN, 0U);
+    i2c_release_bus_delay();
+
+    GPIO_WritePinOutput(I2C_RELEASE_SCL_GPIO, I2C_RELEASE_SCL_PIN, 1U);
+    i2c_release_bus_delay();
+
+    GPIO_WritePinOutput(I2C_RELEASE_SDA_GPIO, I2C_RELEASE_SDA_PIN, 1U);
+    i2c_release_bus_delay();
+}
 
 void APP_Init
 (
@@ -345,6 +427,10 @@ void APP_Init
     }
 }
 
+static void init_accel(void)
+{
+
+}
 /*!*************************************************************************************************
 \fn     void App_Handler(void)
 \brief  Application Handler. In this configuration is called on the task with the lowest priority
@@ -563,6 +649,7 @@ void APP_Commissioning_Handler
         case gThrEv_MeshCop_CommissionerJoinerDtlsError_c:
             break;
         case gThrEv_MeshCop_CommissionerJoinerAccepted_c:
+        	init_accel();
             break;
         case gThrEv_MeshCop_CommissionerNwkDataSynced_c:
             break;
