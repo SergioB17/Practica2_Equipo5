@@ -5459,25 +5459,25 @@ LOAD c:/nxp/mcuxpressoide_11.8.0_1165/ide/plugins/com.nxp.mcuxpresso.tools.win32
  .text.APP_InitCoapDemo
                 0x00031acc       0x58 ./source/router_eligible_device_app.o
  .text.APP_CoapResource2Cb
-                0x00031b24       0x48 ./source/router_eligible_device_app.o
+                0x00031b24       0x44 ./source/router_eligible_device_app.o
  .text.APP_CoapResource1Cb
-                0x00031b6c      0x120 ./source/router_eligible_device_app.o
+                0x00031b68      0x120 ./source/router_eligible_device_app.o
  .text.APP_GetCounter
-                0x00031c8c       0x4c ./source/router_eligible_device_app.o
+                0x00031c88       0x4c ./source/router_eligible_device_app.o
  .text.APP_CoapTempCb
-                0x00031cd8       0xbc ./source/router_eligible_device_app.o
+                0x00031cd4       0xbc ./source/router_eligible_device_app.o
  .text.APP_Init
-                0x00031d94       0x64 ./source/router_eligible_device_app.o
-                0x00031d94                APP_Init
+                0x00031d90       0x64 ./source/router_eligible_device_app.o
+                0x00031d90                APP_Init
  .text.APP_Handler
-                0x00031df8       0x34 ./source/router_eligible_device_app.o
-                0x00031df8                APP_Handler
+                0x00031df4       0x34 ./source/router_eligible_device_app.o
+                0x00031df4                APP_Handler
  .text.Stack_to_APP_Handler
-                0x00031e2c      0x11c ./source/router_eligible_device_app.o
-                0x00031e2c                Stack_to_APP_Handler
+                0x00031e28      0x11c ./source/router_eligible_device_app.o
+                0x00031e28                Stack_to_APP_Handler
  .text.APP_Commissioning_Handler
-                0x00031f48       0xb0 ./source/router_eligible_device_app.o
-                0x00031f48                APP_Commissioning_Handler
+                0x00031f44       0xb4 ./source/router_eligible_device_app.o
+                0x00031f44                APP_Commissioning_Handler
  .text.MAC_AllowBroadcast
                 0x00031ff8        0xc ./nwk_ip/base/utils/mac_abs_802154.o
  .text.MAC_SetPanSecurity
@@ -10845,112 +10845,112 @@ LOAD linker stubs
  .debug_line_str
                 0x000002e2       0xc9 c:/nxp/mcuxpressoide_11.8.0_1165/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.8.0.202306131047/tools/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp\libgcc.a(_ashldi3.o)
 
-.debug_info     0x00000000    0x734f8
+.debug_info     0x00000000    0x73520
  .debug_info    0x00000000      0xf68 ./utilities/fsl_debug_console.o
  .debug_info    0x00000f68      0x206 ./startup/startup_MKW41Z4.o
- .debug_info    0x0000116e     0x3ba9 ./source/router_eligible_device_app.o
- .debug_info    0x00004d17      0x1a6 ./nwk_ip/base/utils/debug_log.o
- .debug_info    0x00004ebd     0x6773 ./nwk_ip/base/utils/mac_abs_802154.o
- .debug_info    0x0000b630      0x85b ./nwk_ip/base/utils/mac_filtering.o
- .debug_info    0x0000be8b     0x16e7 ./nwk_ip/base/utils/nv_data.o
- .debug_info    0x0000d572      0xcdd ./nwk_ip/base/utils/nvm_adapter.o
- .debug_info    0x0000e24f      0xf96 ./nwk_ip/base/thread_config/thread_config.o
- .debug_info    0x0000f1e5      0x85f ./nwk_ip/base/stack_globals/coap_globals.o
- .debug_info    0x0000fa44      0x4c4 ./nwk_ip/base/stack_globals/dhcp_globals.o
- .debug_info    0x0000ff08      0x156 ./nwk_ip/base/stack_globals/dns_globals.o
- .debug_info    0x0001005e      0x450 ./nwk_ip/base/stack_globals/dtls_globals.o
- .debug_info    0x000104ae      0x3a5 ./nwk_ip/base/stack_globals/event_manager_globals.o
- .debug_info    0x00010853      0x57b ./nwk_ip/base/stack_globals/icmp_globals.o
- .debug_info    0x00010dce      0xd5b ./nwk_ip/base/stack_globals/ip_globals.o
- .debug_info    0x00011b29      0x1de ./nwk_ip/base/stack_globals/mle_globals.o
- .debug_info    0x00011d07      0x2bf ./nwk_ip/base/stack_globals/mpl_globals.o
- .debug_info    0x00011fc6     0x1d82 ./nwk_ip/base/stack_globals/sixlowpan_globals.o
- .debug_info    0x00013d48      0x74e ./nwk_ip/base/stack_globals/sockets_globals.o
- .debug_info    0x00014496     0x2224 ./nwk_ip/base/stack_globals/thread_globals.o
- .debug_info    0x000166ba      0x15c ./nwk_ip/base/stack_globals/trickle_globals.o
- .debug_info    0x00016816      0x316 ./nwk_ip/base/stack_globals/udp_globals.o
- .debug_info    0x00016b2c     0x9370 ./nwk_ip/base/shell/shell_ip.o
- .debug_info    0x0001fe9c     0x289c ./nwk_ip/base/ip_media_if/ip_if_6lo.o
- .debug_info    0x00022738      0xa7d ./nwk_ip/base/ip_media_if/ip_if_loopback.o
- .debug_info    0x000231b5      0xe7f ./nwk_ip/app/common/app_event_monitoring.o
- .debug_info    0x00024034      0x944 ./nwk_ip/app/common/app_init.o
- .debug_info    0x00024978      0x98a ./nwk_ip/app/common/app_led.o
- .debug_info    0x00025302      0x2e9 ./nwk_ip/app/common/app_temp_sensor.o
- .debug_info    0x000255eb     0x3632 ./nwk_ip/app/common/app_thread_callbacks.o
- .debug_info    0x00028c1d     0x161b ./nwk_ip/app/common/app_thread_init.o
- .debug_info    0x0002a238      0x161 ./ieee_802.15.4/phy/source/MKW41Z/MPM.o
- .debug_info    0x0002a399     0x1506 ./ieee_802.15.4/phy/source/MKW41Z/PhyISR.o
- .debug_info    0x0002b89f     0x1b19 ./ieee_802.15.4/phy/source/MKW41Z/PhyPacketProcessor.o
- .debug_info    0x0002d3b8     0x135e ./ieee_802.15.4/phy/source/MKW41Z/PhyPlmeData.o
- .debug_info    0x0002e716     0x2358 ./ieee_802.15.4/phy/source/MKW41Z/PhyStateMachine.o
- .debug_info    0x00030a6e      0xb40 ./ieee_802.15.4/phy/source/MKW41Z/PhyTime.o
- .debug_info    0x000315ae      0x208 ./ieee_802.15.4/mac/source/App/FsciMacCommands.o
- .debug_info    0x000317b6      0x781 ./ieee_802.15.4/mac/source/App/MacGlobals.o
- .debug_info    0x00031f37      0xb79 ./freertos/event_groups.o
- .debug_info    0x00032ab0       0xc8 ./freertos/fsl_tickless_lptmr.o
- .debug_info    0x00032b78      0x38a ./freertos/heap_4.o
- .debug_info    0x00032f02      0x2a2 ./freertos/list.o
- .debug_info    0x000331a4      0x284 ./freertos/port.o
- .debug_info    0x00033428     0x184b ./freertos/queue.o
- .debug_info    0x00034c73     0x26ab ./freertos/tasks.o
- .debug_info    0x0003731e     0x1279 ./freertos/timers.o
- .debug_info    0x00038597      0x40a ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_ant_config.o
- .debug_info    0x000389a1      0x40a ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_ble_config.o
- .debug_info    0x00038dab      0x865 ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_common_config.o
- .debug_info    0x00039610      0x43e ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_gfsk_bt_0p3_h_0p5_config.o
- .debug_info    0x00039a4e      0x43e ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_gfsk_bt_0p5_h_0p32_config.o
- .debug_info    0x00039e8c      0x43e ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_gfsk_bt_0p5_h_0p5_config.o
- .debug_info    0x0003a2ca      0x43e ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_gfsk_bt_0p5_h_0p7_config.o
- .debug_info    0x0003a708      0x43e ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_gfsk_bt_0p5_h_1p0_config.o
- .debug_info    0x0003ab46      0x43e ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_gfsk_bt_0p7_h_0p5_config.o
- .debug_info    0x0003af84      0x1c2 ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_mode_datarate_config.o
- .debug_info    0x0003b146      0x43e ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_msk_config.o
- .debug_info    0x0003b584      0x4f6 ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_zgbe_config.o
- .debug_info    0x0003ba7a     0x37ab ./framework/XCVR/MKW41Z4/fsl_xcvr.o
- .debug_info    0x0003f225     0x29e8 ./framework/XCVR/MKW41Z4/fsl_xcvr_trim.o
- .debug_info    0x00041c0d      0x8a6 ./framework/XCVR/MKW41Z4/ifr_radio.o
- .debug_info    0x000424b3      0xf07 ./framework/TimersManager/Source/TMR_Adapter.o
- .debug_info    0x000433ba     0x21c4 ./framework/TimersManager/Source/TimersManager.o
- .debug_info    0x0004557e     0x14d9 ./framework/Shell/Source/shell.o
- .debug_info    0x00046a57      0x99d ./framework/Shell/Source/shell_autocomplete.o
- .debug_info    0x000473f4      0x711 ./framework/Shell/Source/shell_cmdhelp.o
- .debug_info    0x00047b05      0x3b3 ./framework/Shell/Source/shell_cmdhist.o
- .debug_info    0x00047eb8     0x16f7 ./framework/SerialManager/Source/UART_Adapter/UART_Adapter.o
- .debug_info    0x000495af     0x16a5 ./framework/SerialManager/Source/SerialManager.o
- .debug_info    0x0004ac54     0x332b ./framework/SecLib/SecLib.o
- .debug_info    0x0004df7f      0x1a1 ./framework/Reset/Reset.o
- .debug_info    0x0004e120      0xe49 ./framework/RNG/Source/RNG.o
- .debug_info    0x0004ef69       0xfe ./framework/Panic/Source/Panic.o
- .debug_info    0x0004f067     0x1859 ./framework/OSAbstraction/Source/fsl_os_abstraction_free_rtos.o
- .debug_info    0x000508c0     0x3bae ./framework/NVM/Source/NV_Flash.o
- .debug_info    0x0005446e      0x12f ./framework/ModuleInfo/ModuleInfo.o
- .debug_info    0x0005459d      0x500 ./framework/Messaging/Source/Messaging.o
- .debug_info    0x00054a9d      0x716 ./framework/MemManager/Source/MemManager.o
- .debug_info    0x000551b3      0x893 ./framework/LowPower/Source/MKW41Z/PWR.o
- .debug_info    0x00055a46      0x465 ./framework/Lists/GenericList.o
- .debug_info    0x00055eab      0xebf ./framework/LED/Source/LED.o
- .debug_info    0x00056d6a     0x1b6f ./framework/Keyboard/Source/Keyboard.o
- .debug_info    0x000588d9     0x19b6 ./framework/GPIO/GPIO_Adapter.o
- .debug_info    0x0005a28f      0x58d ./framework/FunctionLib/FunctionLib.o
- .debug_info    0x0005a81c      0xf32 ./framework/Flash/Internal/Flash_Adapter.o
- .debug_info    0x0005b74e      0xc23 ./drivers/fsl_adc16.o
- .debug_info    0x0005c371     0x17a3 ./drivers/fsl_clock.o
- .debug_info    0x0005db14      0x467 ./drivers/fsl_common.o
- .debug_info    0x0005df7b     0x37da ./drivers/fsl_dspi.o
- .debug_info    0x00061755     0x246a ./drivers/fsl_flash.o
- .debug_info    0x00063bbf      0x824 ./drivers/fsl_gpio.o
- .debug_info    0x000643e3     0x2530 ./drivers/fsl_i2c.o
- .debug_info    0x00066913     0x1c54 ./drivers/fsl_lpuart.o
- .debug_info    0x00068567     0x3d33 ./drivers/fsl_ltc.o
- .debug_info    0x0006c29a      0x267 ./drivers/fsl_pmc.o
- .debug_info    0x0006c501     0x11db ./drivers/fsl_tpm.o
- .debug_info    0x0006d6dc      0xd91 ./drivers/fsl_trng.o
- .debug_info    0x0006e46d      0xf9e ./drivers/fsl_tsi_v4.o
- .debug_info    0x0006f40b     0x1939 ./board/board.o
- .debug_info    0x00070d44     0x149a ./board/clock_config.o
- .debug_info    0x000721de      0x2f9 ./board/gpio_pins.o
- .debug_info    0x000724d7      0xc5b ./board/pin_mux.o
- .debug_info    0x00073132      0x3c6 ./CMSIS/system_MKW41Z4.o
+ .debug_info    0x0000116e     0x3bd1 ./source/router_eligible_device_app.o
+ .debug_info    0x00004d3f      0x1a6 ./nwk_ip/base/utils/debug_log.o
+ .debug_info    0x00004ee5     0x6773 ./nwk_ip/base/utils/mac_abs_802154.o
+ .debug_info    0x0000b658      0x85b ./nwk_ip/base/utils/mac_filtering.o
+ .debug_info    0x0000beb3     0x16e7 ./nwk_ip/base/utils/nv_data.o
+ .debug_info    0x0000d59a      0xcdd ./nwk_ip/base/utils/nvm_adapter.o
+ .debug_info    0x0000e277      0xf96 ./nwk_ip/base/thread_config/thread_config.o
+ .debug_info    0x0000f20d      0x85f ./nwk_ip/base/stack_globals/coap_globals.o
+ .debug_info    0x0000fa6c      0x4c4 ./nwk_ip/base/stack_globals/dhcp_globals.o
+ .debug_info    0x0000ff30      0x156 ./nwk_ip/base/stack_globals/dns_globals.o
+ .debug_info    0x00010086      0x450 ./nwk_ip/base/stack_globals/dtls_globals.o
+ .debug_info    0x000104d6      0x3a5 ./nwk_ip/base/stack_globals/event_manager_globals.o
+ .debug_info    0x0001087b      0x57b ./nwk_ip/base/stack_globals/icmp_globals.o
+ .debug_info    0x00010df6      0xd5b ./nwk_ip/base/stack_globals/ip_globals.o
+ .debug_info    0x00011b51      0x1de ./nwk_ip/base/stack_globals/mle_globals.o
+ .debug_info    0x00011d2f      0x2bf ./nwk_ip/base/stack_globals/mpl_globals.o
+ .debug_info    0x00011fee     0x1d82 ./nwk_ip/base/stack_globals/sixlowpan_globals.o
+ .debug_info    0x00013d70      0x74e ./nwk_ip/base/stack_globals/sockets_globals.o
+ .debug_info    0x000144be     0x2224 ./nwk_ip/base/stack_globals/thread_globals.o
+ .debug_info    0x000166e2      0x15c ./nwk_ip/base/stack_globals/trickle_globals.o
+ .debug_info    0x0001683e      0x316 ./nwk_ip/base/stack_globals/udp_globals.o
+ .debug_info    0x00016b54     0x9370 ./nwk_ip/base/shell/shell_ip.o
+ .debug_info    0x0001fec4     0x289c ./nwk_ip/base/ip_media_if/ip_if_6lo.o
+ .debug_info    0x00022760      0xa7d ./nwk_ip/base/ip_media_if/ip_if_loopback.o
+ .debug_info    0x000231dd      0xe7f ./nwk_ip/app/common/app_event_monitoring.o
+ .debug_info    0x0002405c      0x944 ./nwk_ip/app/common/app_init.o
+ .debug_info    0x000249a0      0x98a ./nwk_ip/app/common/app_led.o
+ .debug_info    0x0002532a      0x2e9 ./nwk_ip/app/common/app_temp_sensor.o
+ .debug_info    0x00025613     0x3632 ./nwk_ip/app/common/app_thread_callbacks.o
+ .debug_info    0x00028c45     0x161b ./nwk_ip/app/common/app_thread_init.o
+ .debug_info    0x0002a260      0x161 ./ieee_802.15.4/phy/source/MKW41Z/MPM.o
+ .debug_info    0x0002a3c1     0x1506 ./ieee_802.15.4/phy/source/MKW41Z/PhyISR.o
+ .debug_info    0x0002b8c7     0x1b19 ./ieee_802.15.4/phy/source/MKW41Z/PhyPacketProcessor.o
+ .debug_info    0x0002d3e0     0x135e ./ieee_802.15.4/phy/source/MKW41Z/PhyPlmeData.o
+ .debug_info    0x0002e73e     0x2358 ./ieee_802.15.4/phy/source/MKW41Z/PhyStateMachine.o
+ .debug_info    0x00030a96      0xb40 ./ieee_802.15.4/phy/source/MKW41Z/PhyTime.o
+ .debug_info    0x000315d6      0x208 ./ieee_802.15.4/mac/source/App/FsciMacCommands.o
+ .debug_info    0x000317de      0x781 ./ieee_802.15.4/mac/source/App/MacGlobals.o
+ .debug_info    0x00031f5f      0xb79 ./freertos/event_groups.o
+ .debug_info    0x00032ad8       0xc8 ./freertos/fsl_tickless_lptmr.o
+ .debug_info    0x00032ba0      0x38a ./freertos/heap_4.o
+ .debug_info    0x00032f2a      0x2a2 ./freertos/list.o
+ .debug_info    0x000331cc      0x284 ./freertos/port.o
+ .debug_info    0x00033450     0x184b ./freertos/queue.o
+ .debug_info    0x00034c9b     0x26ab ./freertos/tasks.o
+ .debug_info    0x00037346     0x1279 ./freertos/timers.o
+ .debug_info    0x000385bf      0x40a ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_ant_config.o
+ .debug_info    0x000389c9      0x40a ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_ble_config.o
+ .debug_info    0x00038dd3      0x865 ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_common_config.o
+ .debug_info    0x00039638      0x43e ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_gfsk_bt_0p3_h_0p5_config.o
+ .debug_info    0x00039a76      0x43e ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_gfsk_bt_0p5_h_0p32_config.o
+ .debug_info    0x00039eb4      0x43e ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_gfsk_bt_0p5_h_0p5_config.o
+ .debug_info    0x0003a2f2      0x43e ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_gfsk_bt_0p5_h_0p7_config.o
+ .debug_info    0x0003a730      0x43e ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_gfsk_bt_0p5_h_1p0_config.o
+ .debug_info    0x0003ab6e      0x43e ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_gfsk_bt_0p7_h_0p5_config.o
+ .debug_info    0x0003afac      0x1c2 ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_mode_datarate_config.o
+ .debug_info    0x0003b16e      0x43e ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_msk_config.o
+ .debug_info    0x0003b5ac      0x4f6 ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_zgbe_config.o
+ .debug_info    0x0003baa2     0x37ab ./framework/XCVR/MKW41Z4/fsl_xcvr.o
+ .debug_info    0x0003f24d     0x29e8 ./framework/XCVR/MKW41Z4/fsl_xcvr_trim.o
+ .debug_info    0x00041c35      0x8a6 ./framework/XCVR/MKW41Z4/ifr_radio.o
+ .debug_info    0x000424db      0xf07 ./framework/TimersManager/Source/TMR_Adapter.o
+ .debug_info    0x000433e2     0x21c4 ./framework/TimersManager/Source/TimersManager.o
+ .debug_info    0x000455a6     0x14d9 ./framework/Shell/Source/shell.o
+ .debug_info    0x00046a7f      0x99d ./framework/Shell/Source/shell_autocomplete.o
+ .debug_info    0x0004741c      0x711 ./framework/Shell/Source/shell_cmdhelp.o
+ .debug_info    0x00047b2d      0x3b3 ./framework/Shell/Source/shell_cmdhist.o
+ .debug_info    0x00047ee0     0x16f7 ./framework/SerialManager/Source/UART_Adapter/UART_Adapter.o
+ .debug_info    0x000495d7     0x16a5 ./framework/SerialManager/Source/SerialManager.o
+ .debug_info    0x0004ac7c     0x332b ./framework/SecLib/SecLib.o
+ .debug_info    0x0004dfa7      0x1a1 ./framework/Reset/Reset.o
+ .debug_info    0x0004e148      0xe49 ./framework/RNG/Source/RNG.o
+ .debug_info    0x0004ef91       0xfe ./framework/Panic/Source/Panic.o
+ .debug_info    0x0004f08f     0x1859 ./framework/OSAbstraction/Source/fsl_os_abstraction_free_rtos.o
+ .debug_info    0x000508e8     0x3bae ./framework/NVM/Source/NV_Flash.o
+ .debug_info    0x00054496      0x12f ./framework/ModuleInfo/ModuleInfo.o
+ .debug_info    0x000545c5      0x500 ./framework/Messaging/Source/Messaging.o
+ .debug_info    0x00054ac5      0x716 ./framework/MemManager/Source/MemManager.o
+ .debug_info    0x000551db      0x893 ./framework/LowPower/Source/MKW41Z/PWR.o
+ .debug_info    0x00055a6e      0x465 ./framework/Lists/GenericList.o
+ .debug_info    0x00055ed3      0xebf ./framework/LED/Source/LED.o
+ .debug_info    0x00056d92     0x1b6f ./framework/Keyboard/Source/Keyboard.o
+ .debug_info    0x00058901     0x19b6 ./framework/GPIO/GPIO_Adapter.o
+ .debug_info    0x0005a2b7      0x58d ./framework/FunctionLib/FunctionLib.o
+ .debug_info    0x0005a844      0xf32 ./framework/Flash/Internal/Flash_Adapter.o
+ .debug_info    0x0005b776      0xc23 ./drivers/fsl_adc16.o
+ .debug_info    0x0005c399     0x17a3 ./drivers/fsl_clock.o
+ .debug_info    0x0005db3c      0x467 ./drivers/fsl_common.o
+ .debug_info    0x0005dfa3     0x37da ./drivers/fsl_dspi.o
+ .debug_info    0x0006177d     0x246a ./drivers/fsl_flash.o
+ .debug_info    0x00063be7      0x824 ./drivers/fsl_gpio.o
+ .debug_info    0x0006440b     0x2530 ./drivers/fsl_i2c.o
+ .debug_info    0x0006693b     0x1c54 ./drivers/fsl_lpuart.o
+ .debug_info    0x0006858f     0x3d33 ./drivers/fsl_ltc.o
+ .debug_info    0x0006c2c2      0x267 ./drivers/fsl_pmc.o
+ .debug_info    0x0006c529     0x11db ./drivers/fsl_tpm.o
+ .debug_info    0x0006d704      0xd91 ./drivers/fsl_trng.o
+ .debug_info    0x0006e495      0xf9e ./drivers/fsl_tsi_v4.o
+ .debug_info    0x0006f433     0x1939 ./board/board.o
+ .debug_info    0x00070d6c     0x149a ./board/clock_config.o
+ .debug_info    0x00072206      0x2f9 ./board/gpio_pins.o
+ .debug_info    0x000724ff      0xc5b ./board/pin_mux.o
+ .debug_info    0x0007315a      0x3c6 ./CMSIS/system_MKW41Z4.o
 
 .debug_abbrev   0x00000000     0xf0d8
  .debug_abbrev  0x00000000      0x383 ./utilities/fsl_debug_console.o
@@ -11060,145 +11060,145 @@ LOAD linker stubs
  .debug_abbrev  0x0000ef8d      0x14b ./CMSIS/system_MKW41Z4.o
 
 .debug_loclists
-                0x00000000    0x22d10
+                0x00000000    0x22d14
  .debug_loclists
                 0x00000000      0x9f2 ./utilities/fsl_debug_console.o
  .debug_loclists
-                0x000009f2      0xaf3 ./source/router_eligible_device_app.o
+                0x000009f2      0xaf7 ./source/router_eligible_device_app.o
  .debug_loclists
-                0x000014e5     0x11c3 ./nwk_ip/base/utils/mac_abs_802154.o
+                0x000014e9     0x11c3 ./nwk_ip/base/utils/mac_abs_802154.o
  .debug_loclists
-                0x000026a8      0x43a ./nwk_ip/base/utils/mac_filtering.o
+                0x000026ac      0x43a ./nwk_ip/base/utils/mac_filtering.o
  .debug_loclists
-                0x00002ae2      0x1f9 ./nwk_ip/base/utils/nvm_adapter.o
+                0x00002ae6      0x1f9 ./nwk_ip/base/utils/nvm_adapter.o
  .debug_loclists
-                0x00002cdb      0x10e ./nwk_ip/base/stack_globals/thread_globals.o
+                0x00002cdf      0x10e ./nwk_ip/base/stack_globals/thread_globals.o
  .debug_loclists
-                0x00002de9     0x250c ./nwk_ip/base/shell/shell_ip.o
+                0x00002ded     0x250c ./nwk_ip/base/shell/shell_ip.o
  .debug_loclists
-                0x000052f5      0x304 ./nwk_ip/base/ip_media_if/ip_if_6lo.o
+                0x000052f9      0x304 ./nwk_ip/base/ip_media_if/ip_if_6lo.o
  .debug_loclists
-                0x000055f9      0x13a ./nwk_ip/base/ip_media_if/ip_if_loopback.o
+                0x000055fd      0x13a ./nwk_ip/base/ip_media_if/ip_if_loopback.o
  .debug_loclists
-                0x00005733      0x2b1 ./nwk_ip/app/common/app_event_monitoring.o
+                0x00005737      0x2b1 ./nwk_ip/app/common/app_event_monitoring.o
  .debug_loclists
-                0x000059e4       0xde ./nwk_ip/app/common/app_init.o
+                0x000059e8       0xde ./nwk_ip/app/common/app_init.o
  .debug_loclists
-                0x00005ac2      0x2bd ./nwk_ip/app/common/app_led.o
+                0x00005ac6      0x2bd ./nwk_ip/app/common/app_led.o
  .debug_loclists
-                0x00005d7f       0x67 ./nwk_ip/app/common/app_temp_sensor.o
+                0x00005d83       0x67 ./nwk_ip/app/common/app_temp_sensor.o
  .debug_loclists
-                0x00005de6      0xd39 ./nwk_ip/app/common/app_thread_callbacks.o
+                0x00005dea      0xd39 ./nwk_ip/app/common/app_thread_callbacks.o
  .debug_loclists
-                0x00006b1f      0x11d ./nwk_ip/app/common/app_thread_init.o
+                0x00006b23      0x11d ./nwk_ip/app/common/app_thread_init.o
  .debug_loclists
-                0x00006c3c       0x3a ./ieee_802.15.4/phy/source/MKW41Z/MPM.o
+                0x00006c40       0x3a ./ieee_802.15.4/phy/source/MKW41Z/MPM.o
  .debug_loclists
-                0x00006c76      0x283 ./ieee_802.15.4/phy/source/MKW41Z/PhyISR.o
+                0x00006c7a      0x283 ./ieee_802.15.4/phy/source/MKW41Z/PhyISR.o
  .debug_loclists
-                0x00006ef9      0x614 ./ieee_802.15.4/phy/source/MKW41Z/PhyPacketProcessor.o
+                0x00006efd      0x614 ./ieee_802.15.4/phy/source/MKW41Z/PhyPacketProcessor.o
  .debug_loclists
-                0x0000750d      0x7b0 ./ieee_802.15.4/phy/source/MKW41Z/PhyPlmeData.o
+                0x00007511      0x7b0 ./ieee_802.15.4/phy/source/MKW41Z/PhyPlmeData.o
  .debug_loclists
-                0x00007cbd      0x99c ./ieee_802.15.4/phy/source/MKW41Z/PhyStateMachine.o
+                0x00007cc1      0x99c ./ieee_802.15.4/phy/source/MKW41Z/PhyStateMachine.o
  .debug_loclists
-                0x00008659      0x3f9 ./ieee_802.15.4/phy/source/MKW41Z/PhyTime.o
+                0x0000865d      0x3f9 ./ieee_802.15.4/phy/source/MKW41Z/PhyTime.o
  .debug_loclists
-                0x00008a52       0x68 ./ieee_802.15.4/mac/source/App/FsciMacCommands.o
+                0x00008a56       0x68 ./ieee_802.15.4/mac/source/App/FsciMacCommands.o
  .debug_loclists
-                0x00008aba      0x7c6 ./freertos/event_groups.o
+                0x00008abe      0x7c6 ./freertos/event_groups.o
  .debug_loclists
-                0x00009280      0x212 ./freertos/heap_4.o
+                0x00009284      0x212 ./freertos/heap_4.o
  .debug_loclists
-                0x00009492       0x6f ./freertos/list.o
+                0x00009496       0x6f ./freertos/list.o
  .debug_loclists
-                0x00009501       0x8a ./freertos/port.o
+                0x00009505       0x8a ./freertos/port.o
  .debug_loclists
-                0x0000958b     0x1095 ./freertos/queue.o
+                0x0000958f     0x1095 ./freertos/queue.o
  .debug_loclists
-                0x0000a620     0x1690 ./freertos/tasks.o
+                0x0000a624     0x1690 ./freertos/tasks.o
  .debug_loclists
-                0x0000bcb0      0x8e7 ./freertos/timers.o
+                0x0000bcb4      0x8e7 ./freertos/timers.o
  .debug_loclists
-                0x0000c597      0xb96 ./framework/XCVR/MKW41Z4/fsl_xcvr.o
+                0x0000c59b      0xb96 ./framework/XCVR/MKW41Z4/fsl_xcvr.o
  .debug_loclists
-                0x0000d12d     0x1019 ./framework/XCVR/MKW41Z4/fsl_xcvr_trim.o
+                0x0000d131     0x1019 ./framework/XCVR/MKW41Z4/fsl_xcvr_trim.o
  .debug_loclists
-                0x0000e146      0x330 ./framework/XCVR/MKW41Z4/ifr_radio.o
+                0x0000e14a      0x330 ./framework/XCVR/MKW41Z4/ifr_radio.o
  .debug_loclists
-                0x0000e476      0x20a ./framework/TimersManager/Source/TMR_Adapter.o
+                0x0000e47a      0x20a ./framework/TimersManager/Source/TMR_Adapter.o
  .debug_loclists
-                0x0000e680      0xd52 ./framework/TimersManager/Source/TimersManager.o
+                0x0000e684      0xd52 ./framework/TimersManager/Source/TimersManager.o
  .debug_loclists
-                0x0000f3d2      0x561 ./framework/Shell/Source/shell.o
+                0x0000f3d6      0x561 ./framework/Shell/Source/shell.o
  .debug_loclists
-                0x0000f933      0x789 ./framework/Shell/Source/shell_autocomplete.o
+                0x0000f937      0x789 ./framework/Shell/Source/shell_autocomplete.o
  .debug_loclists
-                0x000100bc      0x1d2 ./framework/Shell/Source/shell_cmdhelp.o
+                0x000100c0      0x1d2 ./framework/Shell/Source/shell_cmdhelp.o
  .debug_loclists
-                0x0001028e      0x133 ./framework/Shell/Source/shell_cmdhist.o
+                0x00010292      0x133 ./framework/Shell/Source/shell_cmdhist.o
  .debug_loclists
-                0x000103c1      0x75d ./framework/SerialManager/Source/UART_Adapter/UART_Adapter.o
+                0x000103c5      0x75d ./framework/SerialManager/Source/UART_Adapter/UART_Adapter.o
  .debug_loclists
-                0x00010b1e      0xe5b ./framework/SerialManager/Source/SerialManager.o
+                0x00010b22      0xe5b ./framework/SerialManager/Source/SerialManager.o
  .debug_loclists
-                0x00011979     0x15a1 ./framework/SecLib/SecLib.o
+                0x0001197d     0x15a1 ./framework/SecLib/SecLib.o
  .debug_loclists
-                0x00012f1a      0x1e0 ./framework/RNG/Source/RNG.o
+                0x00012f1e      0x1e0 ./framework/RNG/Source/RNG.o
  .debug_loclists
-                0x000130fa      0x7a7 ./framework/OSAbstraction/Source/fsl_os_abstraction_free_rtos.o
+                0x000130fe      0x7a7 ./framework/OSAbstraction/Source/fsl_os_abstraction_free_rtos.o
  .debug_loclists
-                0x000138a1     0x1f3d ./framework/NVM/Source/NV_Flash.o
+                0x000138a5     0x1f3d ./framework/NVM/Source/NV_Flash.o
  .debug_loclists
-                0x000157de      0x1d0 ./framework/Messaging/Source/Messaging.o
+                0x000157e2      0x1d0 ./framework/Messaging/Source/Messaging.o
  .debug_loclists
-                0x000159ae      0x334 ./framework/MemManager/Source/MemManager.o
+                0x000159b2      0x334 ./framework/MemManager/Source/MemManager.o
  .debug_loclists
-                0x00015ce2       0xad ./framework/LowPower/Source/MKW41Z/PWR.o
+                0x00015ce6       0xad ./framework/LowPower/Source/MKW41Z/PWR.o
  .debug_loclists
-                0x00015d8f      0x1f5 ./framework/Lists/GenericList.o
+                0x00015d93      0x1f5 ./framework/Lists/GenericList.o
  .debug_loclists
-                0x00015f84      0x41d ./framework/LED/Source/LED.o
+                0x00015f88      0x41d ./framework/LED/Source/LED.o
  .debug_loclists
-                0x000163a1      0x571 ./framework/Keyboard/Source/Keyboard.o
+                0x000163a5      0x571 ./framework/Keyboard/Source/Keyboard.o
  .debug_loclists
-                0x00016912      0xa4f ./framework/GPIO/GPIO_Adapter.o
+                0x00016916      0xa4f ./framework/GPIO/GPIO_Adapter.o
  .debug_loclists
-                0x00017361      0x4f8 ./framework/FunctionLib/FunctionLib.o
+                0x00017365      0x4f8 ./framework/FunctionLib/FunctionLib.o
  .debug_loclists
-                0x00017859      0x43a ./framework/Flash/Internal/Flash_Adapter.o
+                0x0001785d      0x43a ./framework/Flash/Internal/Flash_Adapter.o
  .debug_loclists
-                0x00017c93      0x3b7 ./drivers/fsl_adc16.o
+                0x00017c97      0x3b7 ./drivers/fsl_adc16.o
  .debug_loclists
-                0x0001804a      0x91f ./drivers/fsl_clock.o
+                0x0001804e      0x91f ./drivers/fsl_clock.o
  .debug_loclists
-                0x00018969       0x99 ./drivers/fsl_common.o
+                0x0001896d       0x99 ./drivers/fsl_common.o
  .debug_loclists
-                0x00018a02     0x1a93 ./drivers/fsl_dspi.o
+                0x00018a06     0x1a93 ./drivers/fsl_dspi.o
  .debug_loclists
-                0x0001a495     0x15b0 ./drivers/fsl_flash.o
+                0x0001a499     0x15b0 ./drivers/fsl_flash.o
  .debug_loclists
-                0x0001ba45      0x2d8 ./drivers/fsl_gpio.o
+                0x0001ba49      0x2d8 ./drivers/fsl_gpio.o
  .debug_loclists
-                0x0001bd1d     0x1621 ./drivers/fsl_i2c.o
+                0x0001bd21     0x1621 ./drivers/fsl_i2c.o
  .debug_loclists
-                0x0001d33e     0x110a ./drivers/fsl_lpuart.o
+                0x0001d342     0x110a ./drivers/fsl_lpuart.o
  .debug_loclists
-                0x0001e448     0x26d8 ./drivers/fsl_ltc.o
+                0x0001e44c     0x26d8 ./drivers/fsl_ltc.o
  .debug_loclists
-                0x00020b20      0xaf7 ./drivers/fsl_tpm.o
+                0x00020b24      0xaf7 ./drivers/fsl_tpm.o
  .debug_loclists
-                0x00021617      0x848 ./drivers/fsl_trng.o
+                0x0002161b      0x848 ./drivers/fsl_trng.o
  .debug_loclists
-                0x00021e5f      0x4bf ./drivers/fsl_tsi_v4.o
+                0x00021e63      0x4bf ./drivers/fsl_tsi_v4.o
  .debug_loclists
-                0x0002231e      0x39d ./board/board.o
+                0x00022322      0x39d ./board/board.o
  .debug_loclists
-                0x000226bb      0x17c ./board/clock_config.o
+                0x000226bf      0x17c ./board/clock_config.o
  .debug_loclists
-                0x00022837      0x454 ./board/pin_mux.o
+                0x0002283b      0x454 ./board/pin_mux.o
  .debug_loclists
-                0x00022c8b       0x85 ./CMSIS/system_MKW41Z4.o
+                0x00022c8f       0x85 ./CMSIS/system_MKW41Z4.o
 
 .debug_aranges  0x00000000     0x34b0
  .debug_aranges
@@ -11565,161 +11565,161 @@ LOAD linker stubs
  .debug_rnglists
                 0x000029af       0x1a ./CMSIS/system_MKW41Z4.o
 
-.debug_line     0x00000000    0x3920b
+.debug_line     0x00000000    0x3921b
  .debug_line    0x00000000      0xe1e ./utilities/fsl_debug_console.o
  .debug_line    0x00000e1e       0xbc ./startup/startup_MKW41Z4.o
- .debug_line    0x00000eda     0x13bf ./source/router_eligible_device_app.o
- .debug_line    0x00002299      0x16d ./nwk_ip/base/utils/debug_log.o
- .debug_line    0x00002406     0x1a25 ./nwk_ip/base/utils/mac_abs_802154.o
- .debug_line    0x00003e2b      0x73e ./nwk_ip/base/utils/mac_filtering.o
- .debug_line    0x00004569      0x374 ./nwk_ip/base/utils/nv_data.o
- .debug_line    0x000048dd      0x656 ./nwk_ip/base/utils/nvm_adapter.o
- .debug_line    0x00004f33      0x372 ./nwk_ip/base/thread_config/thread_config.o
- .debug_line    0x000052a5      0x213 ./nwk_ip/base/stack_globals/coap_globals.o
- .debug_line    0x000054b8      0x1ea ./nwk_ip/base/stack_globals/dhcp_globals.o
- .debug_line    0x000056a2      0x125 ./nwk_ip/base/stack_globals/dns_globals.o
- .debug_line    0x000057c7      0x281 ./nwk_ip/base/stack_globals/dtls_globals.o
- .debug_line    0x00005a48      0x2ff ./nwk_ip/base/stack_globals/event_manager_globals.o
- .debug_line    0x00005d47      0x181 ./nwk_ip/base/stack_globals/icmp_globals.o
- .debug_line    0x00005ec8      0x2eb ./nwk_ip/base/stack_globals/ip_globals.o
- .debug_line    0x000061b3      0x1e0 ./nwk_ip/base/stack_globals/mle_globals.o
- .debug_line    0x00006393      0x174 ./nwk_ip/base/stack_globals/mpl_globals.o
- .debug_line    0x00006507      0x329 ./nwk_ip/base/stack_globals/sixlowpan_globals.o
- .debug_line    0x00006830      0x293 ./nwk_ip/base/stack_globals/sockets_globals.o
- .debug_line    0x00006ac3      0x638 ./nwk_ip/base/stack_globals/thread_globals.o
- .debug_line    0x000070fb      0x177 ./nwk_ip/base/stack_globals/trickle_globals.o
- .debug_line    0x00007272      0x1c1 ./nwk_ip/base/stack_globals/udp_globals.o
- .debug_line    0x00007433     0x34c7 ./nwk_ip/base/shell/shell_ip.o
- .debug_line    0x0000a8fa      0x7c0 ./nwk_ip/base/ip_media_if/ip_if_6lo.o
- .debug_line    0x0000b0ba      0x33c ./nwk_ip/base/ip_media_if/ip_if_loopback.o
- .debug_line    0x0000b3f6      0x81d ./nwk_ip/app/common/app_event_monitoring.o
- .debug_line    0x0000bc13      0x8dd ./nwk_ip/app/common/app_init.o
- .debug_line    0x0000c4f0      0x612 ./nwk_ip/app/common/app_led.o
- .debug_line    0x0000cb02      0x30d ./nwk_ip/app/common/app_temp_sensor.o
- .debug_line    0x0000ce0f     0x10c0 ./nwk_ip/app/common/app_thread_callbacks.o
- .debug_line    0x0000decf      0x95f ./nwk_ip/app/common/app_thread_init.o
- .debug_line    0x0000e82e      0x1a8 ./ieee_802.15.4/phy/source/MKW41Z/MPM.o
- .debug_line    0x0000e9d6      0x8cf ./ieee_802.15.4/phy/source/MKW41Z/PhyISR.o
- .debug_line    0x0000f2a5      0xf9c ./ieee_802.15.4/phy/source/MKW41Z/PhyPacketProcessor.o
- .debug_line    0x00010241      0xb4c ./ieee_802.15.4/phy/source/MKW41Z/PhyPlmeData.o
- .debug_line    0x00010d8d      0xe72 ./ieee_802.15.4/phy/source/MKW41Z/PhyStateMachine.o
- .debug_line    0x00011bff      0xa32 ./ieee_802.15.4/phy/source/MKW41Z/PhyTime.o
- .debug_line    0x00012631      0x1d1 ./ieee_802.15.4/mac/source/App/FsciMacCommands.o
- .debug_line    0x00012802      0x334 ./ieee_802.15.4/mac/source/App/MacGlobals.o
- .debug_line    0x00012b36      0x86e ./freertos/event_groups.o
- .debug_line    0x000133a4      0x105 ./freertos/fsl_tickless_lptmr.o
- .debug_line    0x000134a9      0x536 ./freertos/heap_4.o
- .debug_line    0x000139df      0x290 ./freertos/list.o
- .debug_line    0x00013c6f      0x31e ./freertos/port.o
- .debug_line    0x00013f8d     0x149a ./freertos/queue.o
- .debug_line    0x00015427     0x23fc ./freertos/tasks.o
- .debug_line    0x00017823      0xaf6 ./freertos/timers.o
- .debug_line    0x00018319      0x132 ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_ant_config.o
- .debug_line    0x0001844b      0x132 ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_ble_config.o
- .debug_line    0x0001857d      0x135 ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_common_config.o
- .debug_line    0x000186b2      0x140 ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_gfsk_bt_0p3_h_0p5_config.o
- .debug_line    0x000187f2      0x141 ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_gfsk_bt_0p5_h_0p32_config.o
- .debug_line    0x00018933      0x140 ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_gfsk_bt_0p5_h_0p5_config.o
- .debug_line    0x00018a73      0x140 ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_gfsk_bt_0p5_h_0p7_config.o
- .debug_line    0x00018bb3      0x140 ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_gfsk_bt_0p5_h_1p0_config.o
- .debug_line    0x00018cf3      0x140 ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_gfsk_bt_0p7_h_0p5_config.o
- .debug_line    0x00018e33      0x13c ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_mode_datarate_config.o
- .debug_line    0x00018f6f      0x132 ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_msk_config.o
- .debug_line    0x000190a1      0x133 ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_zgbe_config.o
- .debug_line    0x000191d4     0x1662 ./framework/XCVR/MKW41Z4/fsl_xcvr.o
- .debug_line    0x0001a836     0x1508 ./framework/XCVR/MKW41Z4/fsl_xcvr_trim.o
- .debug_line    0x0001bd3e      0x50b ./framework/XCVR/MKW41Z4/ifr_radio.o
- .debug_line    0x0001c249      0x50d ./framework/TimersManager/Source/TMR_Adapter.o
- .debug_line    0x0001c756     0x13aa ./framework/TimersManager/Source/TimersManager.o
- .debug_line    0x0001db00      0xee0 ./framework/Shell/Source/shell.o
- .debug_line    0x0001e9e0      0x7b9 ./framework/Shell/Source/shell_autocomplete.o
- .debug_line    0x0001f199      0x4d5 ./framework/Shell/Source/shell_cmdhelp.o
- .debug_line    0x0001f66e      0x2e8 ./framework/Shell/Source/shell_cmdhist.o
- .debug_line    0x0001f956      0x9e9 ./framework/SerialManager/Source/UART_Adapter/UART_Adapter.o
- .debug_line    0x0002033f     0x1095 ./framework/SerialManager/Source/SerialManager.o
- .debug_line    0x000213d4     0x13cf ./framework/SecLib/SecLib.o
- .debug_line    0x000227a3      0x182 ./framework/Reset/Reset.o
- .debug_line    0x00022925      0x657 ./framework/RNG/Source/RNG.o
- .debug_line    0x00022f7c      0x13d ./framework/Panic/Source/Panic.o
- .debug_line    0x000230b9      0xc6d ./framework/OSAbstraction/Source/fsl_os_abstraction_free_rtos.o
- .debug_line    0x00023d26     0x3991 ./framework/NVM/Source/NV_Flash.o
- .debug_line    0x000276b7       0xd6 ./framework/ModuleInfo/ModuleInfo.o
- .debug_line    0x0002778d      0x312 ./framework/Messaging/Source/Messaging.o
- .debug_line    0x00027a9f      0x6c5 ./framework/MemManager/Source/MemManager.o
- .debug_line    0x00028164      0x5b3 ./framework/LowPower/Source/MKW41Z/PWR.o
- .debug_line    0x00028717      0x51f ./framework/Lists/GenericList.o
- .debug_line    0x00028c36      0x8a0 ./framework/LED/Source/LED.o
- .debug_line    0x000294d6      0xd1f ./framework/Keyboard/Source/Keyboard.o
- .debug_line    0x0002a1f5      0xd47 ./framework/GPIO/GPIO_Adapter.o
- .debug_line    0x0002af3c      0x51a ./framework/FunctionLib/FunctionLib.o
- .debug_line    0x0002b456      0x74c ./framework/Flash/Internal/Flash_Adapter.o
- .debug_line    0x0002bba2      0x68c ./drivers/fsl_adc16.o
- .debug_line    0x0002c22e     0x117a ./drivers/fsl_clock.o
- .debug_line    0x0002d3a8      0x2a0 ./drivers/fsl_common.o
- .debug_line    0x0002d648     0x2279 ./drivers/fsl_dspi.o
- .debug_line    0x0002f8c1     0x13f4 ./drivers/fsl_flash.o
- .debug_line    0x00030cb5      0x3ad ./drivers/fsl_gpio.o
- .debug_line    0x00031062     0x1d2d ./drivers/fsl_i2c.o
- .debug_line    0x00032d8f     0x10be ./drivers/fsl_lpuart.o
- .debug_line    0x00033e4d     0x1bdd ./drivers/fsl_ltc.o
- .debug_line    0x00035a2a      0x180 ./drivers/fsl_pmc.o
- .debug_line    0x00035baa      0xe4d ./drivers/fsl_tpm.o
- .debug_line    0x000369f7      0x7e2 ./drivers/fsl_trng.o
- .debug_line    0x000371d9      0x7f7 ./drivers/fsl_tsi_v4.o
- .debug_line    0x000379d0      0x971 ./board/board.o
- .debug_line    0x00038341      0x4f8 ./board/clock_config.o
- .debug_line    0x00038839      0x162 ./board/gpio_pins.o
- .debug_line    0x0003899b      0x5f7 ./board/pin_mux.o
- .debug_line    0x00038f92      0x279 ./CMSIS/system_MKW41Z4.o
+ .debug_line    0x00000eda     0x13cf ./source/router_eligible_device_app.o
+ .debug_line    0x000022a9      0x16d ./nwk_ip/base/utils/debug_log.o
+ .debug_line    0x00002416     0x1a25 ./nwk_ip/base/utils/mac_abs_802154.o
+ .debug_line    0x00003e3b      0x73e ./nwk_ip/base/utils/mac_filtering.o
+ .debug_line    0x00004579      0x374 ./nwk_ip/base/utils/nv_data.o
+ .debug_line    0x000048ed      0x656 ./nwk_ip/base/utils/nvm_adapter.o
+ .debug_line    0x00004f43      0x372 ./nwk_ip/base/thread_config/thread_config.o
+ .debug_line    0x000052b5      0x213 ./nwk_ip/base/stack_globals/coap_globals.o
+ .debug_line    0x000054c8      0x1ea ./nwk_ip/base/stack_globals/dhcp_globals.o
+ .debug_line    0x000056b2      0x125 ./nwk_ip/base/stack_globals/dns_globals.o
+ .debug_line    0x000057d7      0x281 ./nwk_ip/base/stack_globals/dtls_globals.o
+ .debug_line    0x00005a58      0x2ff ./nwk_ip/base/stack_globals/event_manager_globals.o
+ .debug_line    0x00005d57      0x181 ./nwk_ip/base/stack_globals/icmp_globals.o
+ .debug_line    0x00005ed8      0x2eb ./nwk_ip/base/stack_globals/ip_globals.o
+ .debug_line    0x000061c3      0x1e0 ./nwk_ip/base/stack_globals/mle_globals.o
+ .debug_line    0x000063a3      0x174 ./nwk_ip/base/stack_globals/mpl_globals.o
+ .debug_line    0x00006517      0x329 ./nwk_ip/base/stack_globals/sixlowpan_globals.o
+ .debug_line    0x00006840      0x293 ./nwk_ip/base/stack_globals/sockets_globals.o
+ .debug_line    0x00006ad3      0x638 ./nwk_ip/base/stack_globals/thread_globals.o
+ .debug_line    0x0000710b      0x177 ./nwk_ip/base/stack_globals/trickle_globals.o
+ .debug_line    0x00007282      0x1c1 ./nwk_ip/base/stack_globals/udp_globals.o
+ .debug_line    0x00007443     0x34c7 ./nwk_ip/base/shell/shell_ip.o
+ .debug_line    0x0000a90a      0x7c0 ./nwk_ip/base/ip_media_if/ip_if_6lo.o
+ .debug_line    0x0000b0ca      0x33c ./nwk_ip/base/ip_media_if/ip_if_loopback.o
+ .debug_line    0x0000b406      0x81d ./nwk_ip/app/common/app_event_monitoring.o
+ .debug_line    0x0000bc23      0x8dd ./nwk_ip/app/common/app_init.o
+ .debug_line    0x0000c500      0x612 ./nwk_ip/app/common/app_led.o
+ .debug_line    0x0000cb12      0x30d ./nwk_ip/app/common/app_temp_sensor.o
+ .debug_line    0x0000ce1f     0x10c0 ./nwk_ip/app/common/app_thread_callbacks.o
+ .debug_line    0x0000dedf      0x95f ./nwk_ip/app/common/app_thread_init.o
+ .debug_line    0x0000e83e      0x1a8 ./ieee_802.15.4/phy/source/MKW41Z/MPM.o
+ .debug_line    0x0000e9e6      0x8cf ./ieee_802.15.4/phy/source/MKW41Z/PhyISR.o
+ .debug_line    0x0000f2b5      0xf9c ./ieee_802.15.4/phy/source/MKW41Z/PhyPacketProcessor.o
+ .debug_line    0x00010251      0xb4c ./ieee_802.15.4/phy/source/MKW41Z/PhyPlmeData.o
+ .debug_line    0x00010d9d      0xe72 ./ieee_802.15.4/phy/source/MKW41Z/PhyStateMachine.o
+ .debug_line    0x00011c0f      0xa32 ./ieee_802.15.4/phy/source/MKW41Z/PhyTime.o
+ .debug_line    0x00012641      0x1d1 ./ieee_802.15.4/mac/source/App/FsciMacCommands.o
+ .debug_line    0x00012812      0x334 ./ieee_802.15.4/mac/source/App/MacGlobals.o
+ .debug_line    0x00012b46      0x86e ./freertos/event_groups.o
+ .debug_line    0x000133b4      0x105 ./freertos/fsl_tickless_lptmr.o
+ .debug_line    0x000134b9      0x536 ./freertos/heap_4.o
+ .debug_line    0x000139ef      0x290 ./freertos/list.o
+ .debug_line    0x00013c7f      0x31e ./freertos/port.o
+ .debug_line    0x00013f9d     0x149a ./freertos/queue.o
+ .debug_line    0x00015437     0x23fc ./freertos/tasks.o
+ .debug_line    0x00017833      0xaf6 ./freertos/timers.o
+ .debug_line    0x00018329      0x132 ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_ant_config.o
+ .debug_line    0x0001845b      0x132 ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_ble_config.o
+ .debug_line    0x0001858d      0x135 ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_common_config.o
+ .debug_line    0x000186c2      0x140 ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_gfsk_bt_0p3_h_0p5_config.o
+ .debug_line    0x00018802      0x141 ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_gfsk_bt_0p5_h_0p32_config.o
+ .debug_line    0x00018943      0x140 ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_gfsk_bt_0p5_h_0p5_config.o
+ .debug_line    0x00018a83      0x140 ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_gfsk_bt_0p5_h_0p7_config.o
+ .debug_line    0x00018bc3      0x140 ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_gfsk_bt_0p5_h_1p0_config.o
+ .debug_line    0x00018d03      0x140 ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_gfsk_bt_0p7_h_0p5_config.o
+ .debug_line    0x00018e43      0x13c ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_mode_datarate_config.o
+ .debug_line    0x00018f7f      0x132 ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_msk_config.o
+ .debug_line    0x000190b1      0x133 ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_zgbe_config.o
+ .debug_line    0x000191e4     0x1662 ./framework/XCVR/MKW41Z4/fsl_xcvr.o
+ .debug_line    0x0001a846     0x1508 ./framework/XCVR/MKW41Z4/fsl_xcvr_trim.o
+ .debug_line    0x0001bd4e      0x50b ./framework/XCVR/MKW41Z4/ifr_radio.o
+ .debug_line    0x0001c259      0x50d ./framework/TimersManager/Source/TMR_Adapter.o
+ .debug_line    0x0001c766     0x13aa ./framework/TimersManager/Source/TimersManager.o
+ .debug_line    0x0001db10      0xee0 ./framework/Shell/Source/shell.o
+ .debug_line    0x0001e9f0      0x7b9 ./framework/Shell/Source/shell_autocomplete.o
+ .debug_line    0x0001f1a9      0x4d5 ./framework/Shell/Source/shell_cmdhelp.o
+ .debug_line    0x0001f67e      0x2e8 ./framework/Shell/Source/shell_cmdhist.o
+ .debug_line    0x0001f966      0x9e9 ./framework/SerialManager/Source/UART_Adapter/UART_Adapter.o
+ .debug_line    0x0002034f     0x1095 ./framework/SerialManager/Source/SerialManager.o
+ .debug_line    0x000213e4     0x13cf ./framework/SecLib/SecLib.o
+ .debug_line    0x000227b3      0x182 ./framework/Reset/Reset.o
+ .debug_line    0x00022935      0x657 ./framework/RNG/Source/RNG.o
+ .debug_line    0x00022f8c      0x13d ./framework/Panic/Source/Panic.o
+ .debug_line    0x000230c9      0xc6d ./framework/OSAbstraction/Source/fsl_os_abstraction_free_rtos.o
+ .debug_line    0x00023d36     0x3991 ./framework/NVM/Source/NV_Flash.o
+ .debug_line    0x000276c7       0xd6 ./framework/ModuleInfo/ModuleInfo.o
+ .debug_line    0x0002779d      0x312 ./framework/Messaging/Source/Messaging.o
+ .debug_line    0x00027aaf      0x6c5 ./framework/MemManager/Source/MemManager.o
+ .debug_line    0x00028174      0x5b3 ./framework/LowPower/Source/MKW41Z/PWR.o
+ .debug_line    0x00028727      0x51f ./framework/Lists/GenericList.o
+ .debug_line    0x00028c46      0x8a0 ./framework/LED/Source/LED.o
+ .debug_line    0x000294e6      0xd1f ./framework/Keyboard/Source/Keyboard.o
+ .debug_line    0x0002a205      0xd47 ./framework/GPIO/GPIO_Adapter.o
+ .debug_line    0x0002af4c      0x51a ./framework/FunctionLib/FunctionLib.o
+ .debug_line    0x0002b466      0x74c ./framework/Flash/Internal/Flash_Adapter.o
+ .debug_line    0x0002bbb2      0x68c ./drivers/fsl_adc16.o
+ .debug_line    0x0002c23e     0x117a ./drivers/fsl_clock.o
+ .debug_line    0x0002d3b8      0x2a0 ./drivers/fsl_common.o
+ .debug_line    0x0002d658     0x2279 ./drivers/fsl_dspi.o
+ .debug_line    0x0002f8d1     0x13f4 ./drivers/fsl_flash.o
+ .debug_line    0x00030cc5      0x3ad ./drivers/fsl_gpio.o
+ .debug_line    0x00031072     0x1d2d ./drivers/fsl_i2c.o
+ .debug_line    0x00032d9f     0x10be ./drivers/fsl_lpuart.o
+ .debug_line    0x00033e5d     0x1bdd ./drivers/fsl_ltc.o
+ .debug_line    0x00035a3a      0x180 ./drivers/fsl_pmc.o
+ .debug_line    0x00035bba      0xe4d ./drivers/fsl_tpm.o
+ .debug_line    0x00036a07      0x7e2 ./drivers/fsl_trng.o
+ .debug_line    0x000371e9      0x7f7 ./drivers/fsl_tsi_v4.o
+ .debug_line    0x000379e0      0x971 ./board/board.o
+ .debug_line    0x00038351      0x4f8 ./board/clock_config.o
+ .debug_line    0x00038849      0x162 ./board/gpio_pins.o
+ .debug_line    0x000389ab      0x5f7 ./board/pin_mux.o
+ .debug_line    0x00038fa2      0x279 ./CMSIS/system_MKW41Z4.o
 
 .debug_str      0x00000000    0x26108
  .debug_str     0x00000000      0xc15 ./utilities/fsl_debug_console.o
                                 0xcb7 (size before relaxing)
  .debug_str     0x00000c15      0x36c ./startup/startup_MKW41Z4.o
                                 0x3ad (size before relaxing)
- .debug_str     0x00000f81     0x2fb3 ./source/router_eligible_device_app.o
-                               0x3673 (size before relaxing)
- .debug_str     0x00003f34       0x96 ./nwk_ip/base/utils/debug_log.o
+ .debug_str     0x00000f81     0x2fc2 ./source/router_eligible_device_app.o
+                               0x3687 (size before relaxing)
+ .debug_str     0x00003f43       0x96 ./nwk_ip/base/utils/debug_log.o
                                 0x295 (size before relaxing)
- .debug_str     0x00003fca     0x49ed ./nwk_ip/base/utils/mac_abs_802154.o
+ .debug_str     0x00003fd9     0x49ed ./nwk_ip/base/utils/mac_abs_802154.o
                                0x5ede (size before relaxing)
- .debug_str     0x000089b7      0x2c2 ./nwk_ip/base/utils/mac_filtering.o
+ .debug_str     0x000089c6      0x2c2 ./nwk_ip/base/utils/mac_filtering.o
                                 0x80b (size before relaxing)
- .debug_str     0x00008c79      0xd66 ./nwk_ip/base/utils/nv_data.o
+ .debug_str     0x00008c88      0xd66 ./nwk_ip/base/utils/nv_data.o
                                0x16ec (size before relaxing)
- .debug_str     0x000099df      0x4d3 ./nwk_ip/base/utils/nvm_adapter.o
+ .debug_str     0x000099ee      0x4d3 ./nwk_ip/base/utils/nvm_adapter.o
                                 0xd3a (size before relaxing)
- .debug_str     0x00009eb2      0x139 ./nwk_ip/base/thread_config/thread_config.o
+ .debug_str     0x00009ec1      0x139 ./nwk_ip/base/thread_config/thread_config.o
                                0x1554 (size before relaxing)
- .debug_str     0x00009feb      0x1ae ./nwk_ip/base/stack_globals/coap_globals.o
+ .debug_str     0x00009ffa      0x1ae ./nwk_ip/base/stack_globals/coap_globals.o
                                 0x921 (size before relaxing)
- .debug_str     0x0000a199       0xa7 ./nwk_ip/base/stack_globals/dhcp_globals.o
+ .debug_str     0x0000a1a8       0xa7 ./nwk_ip/base/stack_globals/dhcp_globals.o
                                 0x52a (size before relaxing)
- .debug_str     0x0000a240       0xa4 ./nwk_ip/base/stack_globals/dns_globals.o
+ .debug_str     0x0000a24f       0xa4 ./nwk_ip/base/stack_globals/dns_globals.o
                                 0x246 (size before relaxing)
- .debug_str     0x0000a2e4      0x12e ./nwk_ip/base/stack_globals/dtls_globals.o
+ .debug_str     0x0000a2f3      0x12e ./nwk_ip/base/stack_globals/dtls_globals.o
                                 0x3e1 (size before relaxing)
- .debug_str     0x0000a412      0x10e ./nwk_ip/base/stack_globals/event_manager_globals.o
+ .debug_str     0x0000a421      0x10e ./nwk_ip/base/stack_globals/event_manager_globals.o
                                 0x4f6 (size before relaxing)
- .debug_str     0x0000a520      0x436 ./nwk_ip/base/stack_globals/icmp_globals.o
+ .debug_str     0x0000a52f      0x436 ./nwk_ip/base/stack_globals/icmp_globals.o
                                 0x6e8 (size before relaxing)
- .debug_str     0x0000a956      0x303 ./nwk_ip/base/stack_globals/ip_globals.o
+ .debug_str     0x0000a965      0x303 ./nwk_ip/base/stack_globals/ip_globals.o
                                 0xed7 (size before relaxing)
- .debug_str     0x0000ac59       0xbe ./nwk_ip/base/stack_globals/mle_globals.o
+ .debug_str     0x0000ac68       0xbe ./nwk_ip/base/stack_globals/mle_globals.o
                                 0x33d (size before relaxing)
- .debug_str     0x0000ad17       0xfd ./nwk_ip/base/stack_globals/mpl_globals.o
+ .debug_str     0x0000ad26       0xfd ./nwk_ip/base/stack_globals/mpl_globals.o
                                 0x3fa (size before relaxing)
- .debug_str     0x0000ae14      0x152 ./nwk_ip/base/stack_globals/sixlowpan_globals.o
+ .debug_str     0x0000ae23      0x152 ./nwk_ip/base/stack_globals/sixlowpan_globals.o
                                0x1d47 (size before relaxing)
- .debug_str     0x0000af66      0x17f ./nwk_ip/base/stack_globals/sockets_globals.o
+ .debug_str     0x0000af75      0x17f ./nwk_ip/base/stack_globals/sockets_globals.o
                                 0x99c (size before relaxing)
- .debug_str     0x0000b0e5      0xf7d ./nwk_ip/base/stack_globals/thread_globals.o
+ .debug_str     0x0000b0f4      0xf7d ./nwk_ip/base/stack_globals/thread_globals.o
                                0x233d (size before relaxing)
- .debug_str     0x0000c062       0xcf ./nwk_ip/base/stack_globals/trickle_globals.o
+ .debug_str     0x0000c071       0xcf ./nwk_ip/base/stack_globals/trickle_globals.o
                                 0x288 (size before relaxing)
- .debug_str     0x0000c131       0xc3 ./nwk_ip/base/stack_globals/udp_globals.o
+ .debug_str     0x0000c140       0xc3 ./nwk_ip/base/stack_globals/udp_globals.o
                                 0x39e (size before relaxing)
- .debug_str     0x0000c1f4     0x24c1 ./nwk_ip/base/shell/shell_ip.o
+ .debug_str     0x0000c203     0x24b2 ./nwk_ip/base/shell/shell_ip.o
                                0x5849 (size before relaxing)
  .debug_str     0x0000e6b5      0x33a ./nwk_ip/base/ip_media_if/ip_if_6lo.o
                                0x23e5 (size before relaxing)
@@ -20880,6 +20880,7 @@ shell_writeBool                                   ./framework/Shell/Source/shell
 shell_writeDec                                    ./framework/Shell/Source/shell.o
                                                   ./nwk_ip/app/common/app_socket_utils.o
                                                   ./nwk_ip/base/shell/shell_ip.o
+                                                  ./source/router_eligible_device_app.o
 shell_writeHex                                    ./framework/Shell/Source/shell.o
 shell_writeHexLe                                  ./framework/Shell/Source/shell.o
 shell_writeN                                      ./framework/Shell/Source/shell.o

@@ -3005,3 +3005,249 @@ Binding(CTRL+INSERT,
 !MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.ImmediateRequestMonitor@2953d5fb): Status ERROR: org.eclipse.cdt.dsf.gdb code=10004 Suspend operation timeout.' resulted in an error.
 !SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2023-11-22 11:32:34.554
 !MESSAGE Suspend operation timeout.
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2023-11-22 11:49:58.399
+!MESSAGE Telnet session connected on port 2333->56256 @ 127.0.0.1
+
+!ENTRY com.crt.utils 1 0 2023-11-22 11:49:58.597
+!MESSAGE Connected to 127.0.0.1 on port 2332.
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2023-11-22 11:53:27.240
+!MESSAGE Telnet session connected on port 2333->56285 @ 127.0.0.1
+
+!ENTRY com.crt.utils 1 0 2023-11-22 11:53:27.434
+!MESSAGE Connected to 127.0.0.1 on port 2332.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-11-22 11:56:50.888
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.mi.service.MIMemory$4@3fee9ebd): Status ERROR: org.eclipse.cdt.dsf.gdb code=10004 Failed to execute MI command:
+-data-evaluate-expression &(5000)
+Error message from debugger back end:
+Attempt to take address of value not located in memory. java.lang.Exception: Attempt to take address of value not located in memory.' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2023-11-22 11:56:50.888
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression &(5000)
+Error message from debugger back end:
+Attempt to take address of value not located in memory.
+!STACK 0
+java.lang.Exception: Attempt to take address of value not located in memory.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1024)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:853)
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2023-11-22 11:57:09.194
+!MESSAGE Telnet session connected on port 2333->56347 @ 127.0.0.1
+
+!ENTRY com.crt.utils 1 0 2023-11-22 11:57:09.371
+!MESSAGE Connected to 127.0.0.1 on port 2332.
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2023-11-22 11:58:59.601
+!MESSAGE Telnet session connected on port 2333->56374 @ 127.0.0.1
+
+!ENTRY com.crt.utils 1 0 2023-11-22 11:58:59.789
+!MESSAGE Connected to 127.0.0.1 on port 2332.
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2023-11-22 11:59:56.150
+!MESSAGE Telnet session connected on port 2333->56390 @ 127.0.0.1
+
+!ENTRY com.crt.utils 1 0 2023-11-22 11:59:56.325
+!MESSAGE Connected to 127.0.0.1 on port 2332.
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2023-11-22 12:02:12.250
+!MESSAGE Telnet session connected on port 2333->56412 @ 127.0.0.1
+
+!ENTRY com.crt.utils 1 0 2023-11-22 12:02:12.484
+!MESSAGE Connected to 127.0.0.1 on port 2332.
+
+!ENTRY org.eclipse.core.jobs 4 2 2023-11-22 12:02:34.553
+!MESSAGE An internal error occurred during: "Suspend monitor job.".
+!STACK 0
+java.util.concurrent.RejectedExecutionException: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@ef43678[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@37ff32e5[Wrapped task = org.eclipse.cdt.dsf.gdb.service.GDBRunControl_7_12$MonitorSuspendJob$2@35284a2f]] rejected from org.eclipse.cdt.dsf.concurrent.DefaultDsfExecutor@6d8c010c[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 3716]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2065)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:833)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor.delayedExecute(ScheduledThreadPoolExecutor.java:340)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor.schedule(ScheduledThreadPoolExecutor.java:562)
+	at org.eclipse.cdt.dsf.concurrent.DefaultDsfExecutor.schedule(DefaultDsfExecutor.java:450)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor.submit(ScheduledThreadPoolExecutor.java:715)
+	at org.eclipse.cdt.dsf.concurrent.DefaultDsfExecutor.submit(DefaultDsfExecutor.java:482)
+	at org.eclipse.cdt.dsf.gdb.service.GDBRunControl_7_12$MonitorSuspendJob.run(GDBRunControl_7_12.java:358)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2023-11-22 12:02:37.385
+!MESSAGE Telnet session connected on port 2333->56422 @ 127.0.0.1
+
+!ENTRY com.crt.utils 1 0 2023-11-22 12:02:37.532
+!MESSAGE Connected to 127.0.0.1 on port 2332.
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2023-11-22 12:04:34.083
+!MESSAGE Telnet session connected on port 2333->56439 @ 127.0.0.1
+
+!ENTRY com.crt.utils 1 0 2023-11-22 12:04:34.188
+!MESSAGE Connected to 127.0.0.1 on port 2332.
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2023-11-22 12:15:09.365
+!MESSAGE Telnet session connected on port 2333->56511 @ 127.0.0.1
+
+!ENTRY com.crt.utils 1 0 2023-11-22 12:15:09.517
+!MESSAGE Connected to 127.0.0.1 on port 2332.
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2023-11-22 12:23:08.354
+!MESSAGE Telnet session connected on port 2333->56547 @ 127.0.0.1
+
+!ENTRY com.crt.utils 1 0 2023-11-22 12:23:08.495
+!MESSAGE Connected to 127.0.0.1 on port 2332.
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2023-11-22 12:26:44.872
+!MESSAGE Telnet session connected on port 2333->56578 @ 127.0.0.1
+
+!ENTRY com.crt.utils 1 0 2023-11-22 12:26:44.999
+!MESSAGE Connected to 127.0.0.1 on port 2332.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-11-22 12:32:34.584
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.ImmediateRequestMonitor@3a2961ae): Status ERROR: org.eclipse.cdt.dsf.gdb code=10004 Suspend operation timeout.' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2023-11-22 12:32:34.584
+!MESSAGE Suspend operation timeout.
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2023-11-22 12:33:51.526
+!MESSAGE Telnet session connected on port 2333->56713 @ 127.0.0.1
+
+!ENTRY com.crt.utils 1 0 2023-11-22 12:33:51.705
+!MESSAGE Connected to 127.0.0.1 on port 2332.
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2023-11-22 12:36:05.833
+!MESSAGE Telnet session connected on port 2333->56735 @ 127.0.0.1
+
+!ENTRY com.crt.utils 1 0 2023-11-22 12:36:06.001
+!MESSAGE Connected to 127.0.0.1 on port 2332.
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 4 2023-11-22 12:43:07.133
+!MESSAGE NullPointerException while trying to calculated source lookup path. This can be ignored if it occurs while terminating a debug session. See Bug 500988.
+!STACK 0
+java.lang.NullPointerException: Cannot read the array length because "containers" is null
+	at org.eclipse.cdt.dsf.gdb.launching.GdbSourceLookupDirector.collectSubstitutionsPaths(GdbSourceLookupDirector.java:102)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbSourceLookupDirector.collectSubstitutionsPaths(GdbSourceLookupDirector.java:146)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbSourceLookupDirector.getSubstitutionsPaths(GdbSourceLookupDirector.java:72)
+	at org.eclipse.cdt.dsf.gdb.service.GDBSourceLookup.getSubstitutionsPaths(GDBSourceLookup.java:124)
+	at org.eclipse.cdt.dsf.gdb.service.GDBSourceLookup.sourceContainersChanged(GDBSourceLookup.java:139)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbSourceLookupParticipant.sourceContainersChangedOnDispatchThread(GdbSourceLookupParticipant.java:120)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbSourceLookupParticipant$1.run(GdbSourceLookupParticipant.java:85)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+!ENTRY com.nxp.mcuxpresso.core.debug 4 0 2023-11-22 12:43:07.143
+!MESSAGE There is already a running debug session for the launch configuration 'frdmkw41z_Router2 JLink Debug'.
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2023-11-22 12:43:28.792
+!MESSAGE Telnet session connected on port 2333->56787 @ 127.0.0.1
+
+!ENTRY com.crt.utils 1 0 2023-11-22 12:43:28.992
+!MESSAGE Connected to 127.0.0.1 on port 2332.
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2023-11-22 12:46:09.555
+!MESSAGE Telnet session connected on port 2333->56803 @ 127.0.0.1
+
+!ENTRY com.crt.utils 1 0 2023-11-22 12:46:09.927
+!MESSAGE Connected to 127.0.0.1 on port 2332.
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2023-11-22 12:47:38.838
+!MESSAGE Telnet session connected on port 2333->56823 @ 127.0.0.1
+
+!ENTRY com.crt.utils 1 0 2023-11-22 12:47:38.986
+!MESSAGE Connected to 127.0.0.1 on port 2332.
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2023-11-22 12:49:53.647
+!MESSAGE Telnet session connected on port 2333->56841 @ 127.0.0.1
+
+!ENTRY com.crt.utils 1 0 2023-11-22 12:49:53.837
+!MESSAGE Connected to 127.0.0.1 on port 2332.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-11-22 13:02:34.610
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.ImmediateRequestMonitor@50d93497): Status ERROR: org.eclipse.cdt.dsf.gdb code=10004 Suspend operation timeout.' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2023-11-22 13:02:34.610
+!MESSAGE Suspend operation timeout.
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2023-11-22 13:06:39.305
+!MESSAGE Telnet session connected on port 2333->56975 @ 127.0.0.1
+
+!ENTRY com.crt.utils 1 0 2023-11-22 13:06:39.714
+!MESSAGE Connected to 127.0.0.1 on port 2332.
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2023-11-22 13:09:25.193
+!MESSAGE Telnet session connected on port 2333->57005 @ 127.0.0.1
+
+!ENTRY com.crt.utils 1 0 2023-11-22 13:09:25.701
+!MESSAGE Connected to 127.0.0.1 on port 2332.
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2023-11-22 13:10:59.967
+!MESSAGE Telnet session connected on port 2333->57019 @ 127.0.0.1
+
+!ENTRY com.crt.utils 1 0 2023-11-22 13:11:00.282
+!MESSAGE Connected to 127.0.0.1 on port 2332.
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2023-11-22 13:12:22.916
+!MESSAGE Telnet session connected on port 2333->57036 @ 127.0.0.1
+
+!ENTRY com.crt.utils 1 0 2023-11-22 13:12:23.269
+!MESSAGE Connected to 127.0.0.1 on port 2332.
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2023-11-22 13:16:51.183
+!MESSAGE Telnet session connected on port 2333->57062 @ 127.0.0.1
+
+!ENTRY com.crt.utils 1 0 2023-11-22 13:16:51.469
+!MESSAGE Connected to 127.0.0.1 on port 2332.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-11-22 13:17:34.661
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.ImmediateRequestMonitor@2f50ec62): Status ERROR: org.eclipse.cdt.dsf.gdb code=10004 Suspend operation timeout.' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2023-11-22 13:17:34.661
+!MESSAGE Suspend operation timeout.
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2023-11-22 13:20:37.797
+!MESSAGE Telnet session connected on port 2333->57088 @ 127.0.0.1
+
+!ENTRY com.crt.utils 1 0 2023-11-22 13:20:38.169
+!MESSAGE Connected to 127.0.0.1 on port 2332.
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2023-11-22 13:22:03.842
+!MESSAGE Telnet session connected on port 2333->57104 @ 127.0.0.1
+
+!ENTRY com.crt.utils 1 0 2023-11-22 13:22:04.111
+!MESSAGE Connected to 127.0.0.1 on port 2332.
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2023-11-22 13:23:28.349
+!MESSAGE Telnet session connected on port 2333->57119 @ 127.0.0.1
+
+!ENTRY com.crt.utils 1 0 2023-11-22 13:23:28.666
+!MESSAGE Connected to 127.0.0.1 on port 2332.
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2023-11-22 13:24:40.833
+!MESSAGE Telnet session connected on port 2333->57126 @ 127.0.0.1
+
+!ENTRY com.crt.utils 1 0 2023-11-22 13:24:41.039
+!MESSAGE Connected to 127.0.0.1 on port 2332.
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2023-11-22 13:32:22.804
+!MESSAGE Telnet session connected on port 2333->57215 @ 127.0.0.1
+
+!ENTRY com.crt.utils 1 0 2023-11-22 13:32:22.957
+!MESSAGE Connected to 127.0.0.1 on port 2332.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-11-22 13:32:34.623
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.ImmediateRequestMonitor@55642933): Status ERROR: org.eclipse.cdt.dsf.gdb code=10004 Suspend operation timeout.' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2023-11-22 13:32:34.624
+!MESSAGE Suspend operation timeout.
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2023-11-22 13:33:40.714
+!MESSAGE Telnet session connected on port 2333->57240 @ 127.0.0.1
+
+!ENTRY com.crt.utils 1 0 2023-11-22 13:33:40.976
+!MESSAGE Connected to 127.0.0.1 on port 2332.
+
+!ENTRY unknown 8 1 2023-11-22 15:21:22.204
+!MESSAGE 
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-11-22 15:21:22.211
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.ImmediateRequestMonitor@4be1f39e): Status ERROR: org.eclipse.cdt.dsf.gdb code=10004 Suspend operation timeout.' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2023-11-22 15:21:22.211
+!MESSAGE Suspend operation timeout.

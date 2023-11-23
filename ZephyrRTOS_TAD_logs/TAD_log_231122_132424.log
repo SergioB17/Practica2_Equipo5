@@ -1,0 +1,11 @@
+"Task Aware Debugger for GDB" version 11.8.0 (202306131047)
+Copyright 2016-2023 NXP
+==================================
+13:23:11.789 INFO: [ZephyrRTOS] .config file could not be read [C:\EmbebidosIII\Practica2\frdmkw41z_Router2\Debug\.config (El sistema no puede encontrar el archivo especificado)]
+13:23:11.790 INFO: [TadModel] DSF session ID 54 has started.
+13:23:18.969 INFO: [TadState] TAD state changed: DEBUG_STARTED -> DEBUG_INIT_0 (SUSPENDED, USER_REQUEST)
+13:23:28.647 INFO: [TadState] TAD state changed: DEBUG_INIT_0 -> DEBUG_INIT_1 (RESUMED, USER_REQUEST)
+13:23:28.682 INFO: [TadState] TAD state changed: DEBUG_INIT_1 -> DEBUG_SUSPENDED (SUSPENDED, BREAKPOINT)
+13:23:29.753 INFO: [TadState] TAD state changed: DEBUG_SUSPENDED -> DEBUG_RESUMED (RESUMED, USER_REQUEST)
+13:24:23.729 INFO: [TadState] TAD state changed: DEBUG_RESUMED -> READY (SUSPENDED, SIGNAL)
+13:24:24.252 INFO: [TadModel] DSF session ID 54 has ended.
